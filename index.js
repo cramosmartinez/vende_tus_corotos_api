@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const { v4: uuid } = require('uuid');
+const { v4: uuid } = require("uuid");
+const _ = require("underscore");
 
 const app = express();
 app.use(bodyParser.json());
@@ -34,16 +35,41 @@ app
     res.status(201).json(nuevoProducto);
   });
 
-app.get("/productos/:id", (req, res) => {
-  for (let producto of productos) {
-    if (producto.id == req.params.id) {
-      res.json(producto);
+app
+  .route("/productos/:id")
+  .get((req, res) => {
+    for (let producto of productos) {
+      if (producto.id == req.params.id) {
+        res.json(producto);
+        return;
+      }
+    }
+    //Not Found-Producto no encontrado
+    res.status(404).send("El producto con id " + req.params.id + " no existe.");
+  })
+  .put((req, res) => {
+    let id = req.params.id;
+    let remplazoParaProducto = req.body;
+    if (
+      !remplazoParaProducto.nombre ||
+      !remplazoParaProducto.precio ||
+      !remplazoParaProducto.moneda
+    ) {
+      //Bad request-No cumple tus requisitos
+      res.status(400).send("El producto debe tener nombre y precio.");
       return;
     }
-  }
-  //Not Found-Producto no encontrado
-  res.status(404).send("El producto con id " + req.params.id + " no existe.");
-});
+    let indice = _.findIndex(productos, (producto) => producto.id == id);
+    if (indice != -1) {
+      remplazoParaProducto.id = id;
+      productos[indice] = remplazoParaProducto;
+      res.status(200).json(remplazoParaProducto);
+    } else {
+      res
+        .status(404)
+        .send("El producto con id " + req.params.id + " no existe.");
+    }
+  });
 
 //sevidor corriendo super basico
 app.get("/", (req, res) => {

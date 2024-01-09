@@ -18,6 +18,7 @@ app
     res.json(productos);
   })
   //localhost:3000/productos
+  //crear
   .post((req, res) => {
     let nuevoProducto = req.body;
     if (
@@ -37,6 +38,7 @@ app
 
 app
   .route("/productos/:id")
+  //buscar
   .get((req, res) => {
     for (let producto of productos) {
       if (producto.id == req.params.id) {
@@ -47,6 +49,7 @@ app
     //Not Found-Producto no encontrado
     res.status(404).send("El producto con id " + req.params.id + " no existe.");
   })
+  //actualizar
   .put((req, res) => {
     let id = req.params.id;
     let remplazoParaProducto = req.body;
@@ -70,6 +73,7 @@ app
         .send("El producto con id " + req.params.id + " no existe.");
     }
   })
+  //borrar
   .delete((req, res) => {
     let indiceBorrar = _.findIndex(
       productos,

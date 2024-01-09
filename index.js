@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const { v4: uuid } = require('uuid');
 
 const app = express();
+app.use(bodyParser.json());
 //Base de datos de productos
 const productos = [
   { id: 1, nombre: "macbook pro 13", precio: 3000, moneda: "USD" },

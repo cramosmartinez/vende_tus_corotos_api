@@ -69,6 +69,19 @@ app
         .status(404)
         .send("El producto con id " + req.params.id + " no existe.");
     }
+  })
+  .delete((req, res) => {
+    let indiceBorrar = _.findIndex(
+      productos,
+      (producto) => producto.id == req.params.id
+    );
+    if (indiceBorrar === -1) {
+      res
+        .status(404)
+        .send("El producto con id " + req.params.id + " no existe.");
+    }
+    let borrado = productos.splice(indiceBorrar, 1);
+    res.status(200).json(borrado);
   });
 
 //sevidor corriendo super basico

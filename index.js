@@ -2,15 +2,11 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const { v4: uuid } = require("uuid");
 const _ = require("underscore");
+const productos = require("./database").productos;
 
 const app = express();
 app.use(bodyParser.json());
 //Base de datos de productos
-const productos = [
-  { id: 1, nombre: "macbook pro 13", precio: 3000, moneda: "USD" },
-  { id: 2, nombre: "taza de cafe", precio: 10, moneda: "USD" },
-  { id: 3, nombre: "monitor", precio: 1000, moneda: "USD" },
-];
 
 app
   .route("/productos")

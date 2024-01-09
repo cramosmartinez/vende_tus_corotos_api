@@ -3,19 +3,16 @@ const _ = require("underscore");
 const productos = require("../../../database").productos;
 const productosRouter = express.Router();
 const { v4: uuid } = require("uuid");
+const validarProducto = require("./productos.validate");
 
+//Listar
 productosRouter.get("/", (req, res) => {
   res.json(productos);
 });
 //localhost:3000/productos
 //crear
-productosRouter.post("/", (req, res) => {
+productosRouter.post("/", validarProducto, (req, res) => {
   let nuevoProducto = req.body;
-  if (!nuevoProducto.nombre || !nuevoProducto.precio || !nuevoProducto.moneda) {
-    //Bad request-No cumple tus requisitos
-    res.status(400).send("El producto debe tener nombre y precio.");
-    return;
-  }
   nuevoProducto.id = uuid();
   productos.push(nuevoProducto);
   //Creado
@@ -33,18 +30,9 @@ productosRouter.get("/:id", (req, res) => {
   res.status(404).send("El producto con id " + req.params.id + " no existe.");
 });
 //actualizar
-productosRouter.put("/:id", (req, res) => {
+productosRouter.put("/:id", validarProducto, (req, res) => {
   let id = req.params.id;
   let remplazoParaProducto = req.body;
-  if (
-    !remplazoParaProducto.nombre ||
-    !remplazoParaProducto.precio ||
-    !remplazoParaProducto.moneda
-  ) {
-    //Bad request-No cumple tus requisitos
-    res.status(400).send("El producto debe tener nombre y precio.");
-    return;
-  }
   let indice = _.findIndex(productos, (producto) => producto.id == id);
   if (indice != -1) {
     remplazoParaProducto.id = id;

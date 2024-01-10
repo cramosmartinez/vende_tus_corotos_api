@@ -1,0 +1,34 @@
+info: 2024-01-10T18:11:27.902Z Hola soy winston
+error: 2024-01-10T18:11:27.904Z Algo exploto
+warn: 2024-01-10T18:11:27.904Z Cuidado
+info: 2024-01-10T18:11:44.163Z Hola soy winston
+error: 2024-01-10T18:11:44.165Z Algo exploto
+warn: 2024-01-10T18:11:44.165Z Cuidado
+info: 2024-01-10T18:12:07.269Z Hola soy winston
+error: 2024-01-10T18:12:07.270Z Algo exploto
+warn: 2024-01-10T18:12:07.271Z Cuidado
+info: 2024-01-10T18:12:20.179Z Hola soy winston
+error: 2024-01-10T18:12:20.181Z Algo exploto
+warn: 2024-01-10T18:12:20.181Z Cuidado
+info: 2024-01-10T18:12:24.545Z Hola soy winston
+error: 2024-01-10T18:12:24.546Z Algo exploto
+warn: 2024-01-10T18:12:24.546Z Cuidado
+info: 2024-01-10T18:12:26.307Z Hola soy winston
+error: 2024-01-10T18:12:26.308Z Algo exploto
+warn: 2024-01-10T18:12:26.309Z Cuidado
+info: 2024-01-10T18:12:35.746Z Hola soy winston
+error: 2024-01-10T18:12:35.747Z Algo exploto
+warn: 2024-01-10T18:12:35.748Z Cuidado
+error: 2024-01-10T18:12:35.762Z uncaughtException: Cannot create property 'Symbol(level)' on string 'Escuchando el puerto 3000.'
+TypeError: Cannot create property 'Symbol(level)' on string 'Escuchando el puerto 3000.'
+    at DerivedLogger.log (D:\Proyectos\vende_tus_corotos_api\node_modules\winston\lib\winston\logger.js:214:20)
+    at Server.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:17:10)
+    at Object.onceWrapper (node:events:628:28)
+    at Server.emit (node:events:526:35)
+    at emitListeningNT (node:net:1906:10)
+    at process.processTicksAndRejections (node:internal/process/task_queues:81:21) {"date":"Wed Jan 10 2024 12:12:35 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":4238.421},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":17095,"external":2222769,"heapTotal":15224832,"heapUsed":10077180,"rss":38158336},"pid":9180,"uid":null,"version":"v20.10.0"},"stack":"TypeError: Cannot create property 'Symbol(level)' on string 'Escuchando el puerto 3000.'\n    at DerivedLogger.log (D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\winston\\lib\\winston\\logger.js:214:20)\n    at Server.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:17:10)\n    at Object.onceWrapper (node:events:628:28)\n    at Server.emit (node:events:526:35)\n    at emitListeningNT (node:net:1906:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)","trace":[{"column":20,"file":"D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\winston\\lib\\winston\\logger.js","function":"DerivedLogger.log","line":214,"method":"log","native":false},{"column":10,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":17,"method":null,"native":false},{"column":28,"file":"node:events","function":"Object.onceWrapper","line":628,"method":"onceWrapper","native":false},{"column":35,"file":"node:events","function":"Server.emit","line":526,"method":"emit","native":false},{"column":10,"file":"node:net","function":"emitListeningNT","line":1906,"method":null,"native":false},{"column":21,"file":"node:internal/process/task_queues","function":"process.processTicksAndRejections","line":81,"method":"processTicksAndRejections","native":false}]}
+info: 2024-01-10T18:12:39.485Z Hola soy winston
+error: 2024-01-10T18:12:39.486Z Algo exploto
+warn: 2024-01-10T18:12:39.487Z Cuidado
+info: 2024-01-10T18:12:39.496Z Escuchando el puerto 3000.
+info: 2024-01-10T18:12:46.359Z Escuchando el puerto 3000.

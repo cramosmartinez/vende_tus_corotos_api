@@ -1,4 +1,5 @@
 const Joi = require("joi");
+const { log } = require("../../../utils/logger");
 
 const blueprintProducto = Joi.object({
   nombre: Joi.string().max(100).required(),
@@ -18,7 +19,10 @@ module.exports = (req, res, next) => {
     let errorDeValidacion = resultado.error.details.reduce((acc, error) => {
       return acc + `[${error.message}]`;
     }, "");
-
+    log.warn(
+      "El producto en el body no cumple con el formato requerido. Detalles: " +
+        errorDeValidacion
+    );
     res
       .status(400)
       .send(

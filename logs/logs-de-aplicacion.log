@@ -138,3 +138,16 @@ info: 2024-01-10T18:17:47.265Z Escuchando el puerto 3000.
 info: 2024-01-10T18:17:56.134Z ::1 - GET /productos HTTP/1.1 200 182 - 2.134 ms
 info: 2024-01-10T18:18:04.963Z ::1 - DELETE /productos/2 HTTP/1.1 200 61 - 0.840 ms
 info: 2024-01-10T18:18:12.041Z ::1 - POST /productos/ HTTP/1.1 201 94 - 2.244 ms
+info: 2024-01-10T18:19:23.795Z Escuchando el puerto 3000.
+info: 2024-01-10T18:19:44.927Z Escuchando el puerto 3000.
+info: 2024-01-10T18:20:06.171Z Escuchando el puerto 3000.
+info: 2024-01-10T18:20:08.561Z Escuchando el puerto 3000.
+info: 2024-01-10T18:20:09.905Z Escuchando el puerto 3000.
+info: 2024-01-10T18:20:22.423Z Escuchando el puerto 3000.
+info: 2024-01-10T18:20:24.592Z Escuchando el puerto 3000.
+info: 2024-01-10T18:20:44.191Z Escuchando el puerto 3000.
+info: 2024-01-10T18:20:47.157Z Escuchando el puerto 3000.
+info: 2024-01-10T18:20:49.512Z Escuchando el puerto 3000.
+info: 2024-01-10T18:21:24.324Z Escuchando el puerto 3000.
+info: 2024-01-10T18:21:25.912Z Escuchando el puerto 3000.
+info: 2024-01-10T18:21:27.528Z Escuchando el puerto 3000.

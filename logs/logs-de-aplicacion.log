@@ -483,3 +483,64 @@ info: 2024-01-12T00:34:00.239Z ::1 - GET /favicon.ico HTTP/1.1 404 150 - 1.360 m
 info: 2024-01-12T00:34:10.640Z ::1 - GET / HTTP/1.1 401 - - 0.991 ms
 info: 2024-01-12T00:34:17.140Z ::1 Carlos GET / HTTP/1.1 200 27 - 1.881 ms
 info: 2024-01-12T00:34:31.330Z ::1 Carlos GET / HTTP/1.1 304 - - 0.626 ms
+info: 2024-01-12T00:34:39.892Z Escuchando el puerto 3000.
+info: 2024-01-12T00:34:40.563Z ::1 Carlos GET / HTTP/1.1 304 - - 3.770 ms
+info: 2024-01-12T00:34:42.095Z ::1 Carlos GET / HTTP/1.1 304 - - 0.578 ms
+info: 2024-01-12T00:34:46.541Z ::1 Carlos GET / HTTP/1.1 304 - - 0.388 ms
+info: 2024-01-12T00:34:48.778Z ::1 Carlos GET / HTTP/1.1 304 - - 0.675 ms
+info: 2024-01-12T00:37:46.132Z Escuchando el puerto 3000.
+info: 2024-01-12T00:38:26.787Z Escuchando el puerto 3000.
+info: 2024-01-12T00:38:55.026Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:02.279Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:04.152Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:05.940Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:08.191Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:16.557Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:19.416Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:22.697Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:29.014Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:42.269Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:44.890Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:53.999Z Escuchando el puerto 3000.
+info: 2024-01-12T00:39:57.099Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:02.934Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:08.389Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:09.474Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:11.852Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:16.977Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:19.387Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:20.989Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:24.594Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:40.093Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:42.337Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:44.951Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:52.413Z Escuchando el puerto 3000.
+info: 2024-01-12T00:40:54.630Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:04.522Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:08.663Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:09.935Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:19.062Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:23.532Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:27.219Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:29.845Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:30.818Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:32.542Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:34.993Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:37.582Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:44.295Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:57.244Z Escuchando el puerto 3000.
+info: 2024-01-12T00:41:58.877Z Escuchando el puerto 3000.
+info: 2024-01-12T00:42:03.539Z Escuchando el puerto 3000.
+info: 2024-01-12T00:42:07.396Z Escuchando el puerto 3000.
+info: 2024-01-12T00:42:09.850Z Escuchando el puerto 3000.
+info: 2024-01-12T00:42:30.355Z Escuchando el puerto 3000.
+info: 2024-01-12T00:42:32.947Z Escuchando el puerto 3000.
+info: 2024-01-12T00:42:47.654Z Escuchando el puerto 3000.
+info: 2024-01-12T00:42:49.178Z Escuchando el puerto 3000.
+info: 2024-01-12T00:42:58.301Z Escuchando el puerto 3000.
+info: 2024-01-12T00:43:03.861Z Escuchando el puerto 3000.
+info: 2024-01-12T00:43:06.922Z Escuchando el puerto 3000.
+info: 2024-01-12T00:43:11.021Z Escuchando el puerto 3000.
+info: 2024-01-12T00:43:12.524Z Escuchando el puerto 3000.
+info: 2024-01-12T00:43:14.422Z Escuchando el puerto 3000.
+info: 2024-01-12T00:43:28.746Z Escuchando el puerto 3000.

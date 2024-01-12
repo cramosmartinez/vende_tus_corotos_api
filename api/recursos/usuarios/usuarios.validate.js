@@ -6,11 +6,15 @@ const blueprintUsuario = Joi.object({
   password: Joi.string().min(8).required(),
   email: Joi.string().email().required(),
 });
+const blueprintPedidoDeLogin = Joi.object({
+  username: Joi.string().required(),
+  password: Joi.string().required(),
+});
 
 let validarUsuario = (req, res, next) => {
   const resultado = blueprintUsuario.validate(req.body, {
     abortEarly: false,
-    convert: true, // Cambiado a true para permitir la conversión de tipos
+    convert: false, // Cambiado a true para permitir la conversión de tipos
   });
 
   if (!resultado.error) {
@@ -18,7 +22,7 @@ let validarUsuario = (req, res, next) => {
   } else {
     log.info(
       "Producto fallo la validacion",
-      resultado.error.details.map(error => error.message)
+      (resultado.error.details || []).map((error) => error.message)
     );
     res
       .status(400)
@@ -26,27 +30,18 @@ let validarUsuario = (req, res, next) => {
         "El usuario en el body debe especificar username, password y email."
       );
   }
-}
-const bluprintPedidoDeLogin = Joi.object({
-  username: Joi.string().required(),
-  password: Joi.string().required(),
-});
+};
+
 let validarPedidoDeLogin = (req, res, next) => {
-  const resultado = bluprintPedidoDeLogin.validate(req.body, {
-    convert: true,
+  const resultado = blueprintPedidoDeLogin.validate(req.body, {
+    convert: false,
     abortEarly: false,
   });
-
-  if (resultado.error === null) {
+  if (!resultado.error) {
     next();
   } else {
-    log.info(
-      "El pedido de login no tiene los datos necesarios",
-      resultado.error.details.map((error) => error.message)
-    );
     res.status(400).send("El pedido de login no tiene los datos necesarios");
   }
-}
-
+};
 
 module.exports = { validarUsuario, validarPedidoDeLogin };

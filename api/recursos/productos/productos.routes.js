@@ -5,17 +5,21 @@ const productosRouter = express.Router();
 const { v4: uuid } = require("uuid");
 const validarProducto = require("./productos.validate");
 const log = require("../../../utils/logger");
-
-
+const passport = require("passport");
+const { id } = require("@hapi/joi/lib/base");
+const jwtAuthhenticate = passport.authenticate("jwt", { session: false });
 //Listar
 productosRouter.get("/", (req, res) => {
   res.json(productos);
 });
 //localhost:3000/productos
 //crear
-productosRouter.post("/", validarProducto, (req, res) => {
-  let nuevoProducto = req.body;
-  nuevoProducto.id = uuid();
+productosRouter.post("/", [jwtAuthhenticate, validarProducto], (req, res) => {
+  let nuevoProducto = {
+    ...req.body,
+    id: uuid(),
+    dueño: req.user.username,
+  };
   productos.push(nuevoProducto);
   log.info("Se creo un nuevo producto", nuevoProducto);
   //Creado
@@ -33,21 +37,31 @@ productosRouter.get("/:id", (req, res) => {
   res.status(404).send("El producto con id " + req.params.id + " no existe.");
 });
 //actualizar
-productosRouter.put("/:id", validarProducto, (req, res) => {
-  let id = req.params.id;
-  let remplazoParaProducto = req.body;
-  let indice = _.findIndex(productos, (producto) => producto.id == id);
+productosRouter.put("/:id", [jwtAuthhenticate, validarProducto], (req, res) => {
+  let remplazoParaProducto = {
+    ...req.body,
+    id: req.params.id,
+    dueño: req.user.username,
+  };
+  let indice = _.findIndex(
+    productos,
+    (producto) => producto.id == remplazoParaProducto.id
+  );
   if (indice != -1) {
-    remplazoParaProducto.id = id;
+    if (productos[indice].dueño != req.user.username) {
+      log.info("Usuario ${req.user.username} intento editar un producto con id ${remplazoParaProducto.id} que no le pertenece")
+      res.status(403).send("No tiene permisos para editar este producto");
+      return;
+    }
     productos[indice] = remplazoParaProducto;
-    log.info("Se actualizo un producto", remplazoParaProducto);
+    log.info("Se actualizo un producto ${remplazoParaProducto.id}", remplazoParaProducto);
     res.status(200).json(remplazoParaProducto);
   } else {
     res.status(404).send("El producto con id " + req.params.id + " no existe.");
   }
 });
 //borrar
-productosRouter.delete("/:id", (req, res) => {
+productosRouter.delete("/:id", jwtAuthhenticate, (req, res) => {
   let indiceBorrar = _.findIndex(
     productos,
     (producto) => producto.id == req.params.id
@@ -56,6 +70,12 @@ productosRouter.delete("/:id", (req, res) => {
     log.warn("Se intento borrar un producto que no existe");
     res.status(404).send("El producto con id " + req.params.id + " no existe.");
   }
+  if (productos[indiceBorrar].dueño != req.user.username) {
+    log.info("Usuario ${req.user.username} intento borrar un producto con id ${req.params.id} que no le pertenece")
+    res.status(403).send("No tiene permisos para borrar este producto");
+    return;
+  }
+
   let borrado = productos.splice(indiceBorrar, 1);
   res.status(200).json(borrado);
 });

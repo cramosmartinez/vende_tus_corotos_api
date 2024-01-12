@@ -5,11 +5,10 @@ const productos = [
 ];
 
 const usuarios = [
-  { id: 1, nombre: "Carlos", password: "1234" },
-  { id: 2, nombre: "Juan", password: "1234" },
-  { id: 3, nombre: "Pedro", password: "1234" },
+  
 ];
 
 module.exports = {
   productos,
+  usuarios,
 };

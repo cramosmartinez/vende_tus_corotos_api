@@ -4,17 +4,12 @@ const productosRouter = require("./api/recursos/productos/productos.routes");
 const logger = require("./utils/logger");
 const morgan = require("morgan");
 const passport = require("passport");
+const auth = require("./api/libs/auth");
+const bcrypt = require('bcryptjs');
+const usuariosRouter = require("./api/recursos/usuarios/usuarios.routes");
 //autenticacion de constraseña y username
 const BasicStrategy = require("passport-http").BasicStrategy;
-passport.use(
-  new BasicStrategy((username, password, done) => {
-    if (username.valueOf() === "Carlos" && password.valueOf() === "1234") {
-      return done(null, true);
-    } else {
-      return done(null, false);
-    }
-  })
-);
+passport.use(new BasicStrategy(auth));
 
 const app = express();
 app.use(bodyParser.json());
@@ -29,6 +24,7 @@ app.use(
 app.use(passport.initialize());
 //usamos el enrutador de productos
 app.use("/productos", productosRouter);
+app.use("/usuarios", usuariosRouter);
 
 //sevidor corriendo super basico
 app.get("/", passport.authenticate("basic", { session: false }), (req, res) => {

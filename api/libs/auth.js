@@ -7,7 +7,7 @@ const passportJWT = require("passport-jwt");
 const config = require("../../config");
 
 let jwtOptions = {
-  secretOrKey: "config.jwt.secreto",
+  secretOrKey: config.jwt.secreto,
   jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
 };
 module.exports = new passportJWT.Strategy(jwtOptions, (jwtPayload, next) => {

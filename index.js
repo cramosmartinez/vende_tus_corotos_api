@@ -13,11 +13,11 @@ const mongoose = require("mongoose");
 passport.use(authJWT);
 
 //MongoDB => NoSql = > no hay tablas, si no colecciones de documentos
-mongoose.connect("mongodb://127.0.0.1:27017/vendetuscorotos");
-mongoose.connection.on("error", () => {
-  logger.error("Fallo la conexion a MongoDB");
-  process.exit(1);
+mongoose.connect("mongodb://127.0.0.1:27017/vendetuscorotos", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 });
+
 
 
 const app = express();
@@ -34,7 +34,6 @@ app.use(passport.initialize());
 //usamos el enrutador de productos
 app.use("/productos", productosRouter);
 app.use("/usuarios", usuariosRouter);
-
 
 app.listen(config.puerto, () => {
   logger.info("Escuchando el puerto 3000.");

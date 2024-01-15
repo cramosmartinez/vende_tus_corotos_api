@@ -68,9 +68,9 @@ usuariosRouter.post("/login", validarPedidoDeLogin, (req, res) => {
     hashedPassword,
     (err, iguales) => {
       if (iguales) {
-        let token = jwt.sign({ id: usuarios[index].id }, "config.jwt.secreto", {
-          expiresIn: "config.jwt.tiempoDeExpiracion",
-        });
+        let token = jwt.sign({ id: usuarios[index].id }, config.jwt.secreto, {
+          expiresIn: config.jwt.tiempoDeExpiracion,
+        });        
         log.info(`Usuario ${usuarioNoAutenticado.username} ha iniciado sesión`);
         res.status(200).json({ jwt: token });
       } else {

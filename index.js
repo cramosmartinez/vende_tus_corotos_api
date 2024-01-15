@@ -6,6 +6,7 @@ const morgan = require("morgan");
 const passport = require("passport");
 const authJWT = require("./api/libs/auth");
 const usuariosRouter = require("./api/recursos/usuarios/usuarios.routes");
+const config = require("./config");
 //autenticacion de constraseña y username
 passport.use(authJWT);
 
@@ -25,6 +26,6 @@ app.use("/productos", productosRouter);
 app.use("/usuarios", usuariosRouter);
 
 
-app.listen(3000, () => {
+app.listen(config.puerto, () => {
   logger.info("Escuchando el puerto 3000.");
 });

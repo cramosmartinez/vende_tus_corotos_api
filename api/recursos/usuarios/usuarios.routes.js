@@ -7,7 +7,8 @@ const validarUsuario = require("./usuarios.validate").validarUsuario;
 const usuarios = require("../../../database").usuarios;
 const usuariosRouter = express.Router();
 const jwt = require("jsonwebtoken");
-const e = require("express");
+const config = require("../../../config");
+
 const validarPedidoDeLogin =
   require("./usuarios.validate.js").validarPedidoDeLogin;
 
@@ -67,16 +68,19 @@ usuariosRouter.post("/login", validarPedidoDeLogin, (req, res) => {
     hashedPassword,
     (err, iguales) => {
       if (iguales) {
-        let token = jwt.sign({ id: usuarios[index].id }, "secreto", {
-          expiresIn: "1h",
+        let token = jwt.sign({ id: usuarios[index].id }, "config.jwt.secreto", {
+          expiresIn: "config.jwt.tiempoDeExpiracion",
         });
         log.info(`Usuario ${usuarioNoAutenticado.username} ha iniciado sesión`);
-        res.status(200).json({ jwt: token});
-      }else{
-        log.info(`Contraseña incorrecta para usuario ${usuarioNoAutenticado.username}`);
+        res.status(200).json({ jwt: token });
+      } else {
+        log.info(
+          `Contraseña incorrecta para usuario ${usuarioNoAutenticado.username}`
+        );
         res.status(401).send("Contraseña incorrecta");
       }
-});
+    }
+  );
 });
 
 module.exports = usuariosRouter;

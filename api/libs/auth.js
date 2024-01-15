@@ -4,9 +4,10 @@ const usuarios = require("../../database").usuarios;
 const bcrypt = require("bcryptjs");
 const _ = require("underscore");
 const passportJWT = require("passport-jwt");
+const config = require("../../config");
 
 let jwtOptions = {
-  secretOrKey: "secreto",
+  secretOrKey: "config.jwt.secreto",
   jwtFromRequest: passportJWT.ExtractJwt.fromAuthHeaderAsBearerToken(),
 };
 module.exports = new passportJWT.Strategy(jwtOptions, (jwtPayload, next) => {

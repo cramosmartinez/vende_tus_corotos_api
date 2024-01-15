@@ -4648,3 +4648,66 @@ info: 2024-01-15T19:54:24.489Z Escuchando el puerto 3000.
 info: 2024-01-15T19:54:29.294Z Escuchando el puerto 3000.
 info: 2024-01-15T19:54:44.540Z Escuchando el puerto 3000.
 info: 2024-01-15T19:54:45.782Z Escuchando el puerto 3000.
+info: 2024-01-15T19:54:51.942Z Escuchando el puerto 3000.
+info: 2024-01-15T19:54:55.676Z Se creó un nuevo usuario {"email":"cramosmartinez5@gmail.com","password":"12345678","username":"carlos"}
+info: 2024-01-15T19:54:55.681Z ::1 - POST /usuarios HTTP/1.1 201 79 - 97.832 ms
+info: 2024-01-15T19:54:57.820Z Usuario carlos ha iniciado sesión
+info: 2024-01-15T19:54:57.821Z ::1 - POST /usuarios/login HTTP/1.1 200 197 - 83.833 ms
+info: 2024-01-15T19:55:05.484Z ::1 - GET /productos/65a58a64873b242cc073fe7d HTTP/1.1 200 109 - 9.376 ms
+info: 2024-01-15T19:55:15.996Z Usuario carlos esta autenticado
+info: 2024-01-15T19:55:16.007Z Se creo un nuevo producto {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65a58da352398164fe02f9dd","dueño":"carlos","moneda":"USD","nombre":"XboxGame","precio":1233}}
+info: 2024-01-15T19:55:16.008Z ::1 - POST /productos HTTP/1.1 201 109 - 14.215 ms
+info: 2024-01-15T19:55:19.349Z ::1 - GET /productos HTTP/1.1 200 1072 - 5.111 ms
+info: 2024-01-15T20:00:34.355Z Escuchando el puerto 3000.
+error: 2024-01-15T20:00:35.659Z uncaughtException: fun is not defined
+ReferenceError: fun is not defined
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\productos\productos.controller.js:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\productos\productos.routes.js:8:28)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Mon Jan 15 2024 14:00:35 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":6075.312},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":21062240,"heapTotal":29519872,"heapUsed":15039372,"rss":53399552},"pid":7476,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: fun is not defined\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.controller.js:17:1)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js:8:28)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":1,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.controller.js","function":null,"line":17,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":28,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+error: 2024-01-15T20:00:37.427Z uncaughtException: Unexpected token '.'
+D:\Proyectos\vende_tus_corotos_api\api\recursos\productos\productos.controller.js:19
+module.exports = {
+      ^
+
+SyntaxError: Unexpected token '.'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\productos\productos.routes.js:8:28)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Mon Jan 15 2024 14:00:37 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":6077.078},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":16839,"external":2203336,"heapTotal":15224832,"heapUsed":9657724,"rss":37863424},"pid":10088,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.controller.js:19\nmodule.exports = {\n      ^\n\nSyntaxError: Unexpected token '.'\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js:8:28)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":28,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-01-15T20:02:09.358Z Escuchando el puerto 3000.
+info: 2024-01-15T20:02:55.823Z Escuchando el puerto 3000.
+info: 2024-01-15T20:02:58.253Z Escuchando el puerto 3000.
+error: 2024-01-15T20:03:02.944Z uncaughtException: func is not defined
+ReferenceError: func is not defined
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\productos\productos.routes.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:3:25)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Mon Jan 15 2024 14:03:02 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":6222.593},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262455,"external":20636248,"heapTotal":30044160,"heapUsed":16609600,"rss":50343936},"pid":1092,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: func is not defined\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js:11:1)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:3:25)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":1,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":25,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-01-15T20:03:19.546Z Escuchando el puerto 3000.
+info: 2024-01-15T20:03:21.995Z Escuchando el puerto 3000.
+info: 2024-01-15T20:04:23.102Z Escuchando el puerto 3000.
+info: 2024-01-15T20:04:33.466Z Se creó un nuevo usuario {"email":"cramosmartinez5@gmail.com","password":"12345678","username":"carlos"}
+info: 2024-01-15T20:04:33.470Z ::1 - POST /usuarios HTTP/1.1 201 79 - 97.710 ms
+info: 2024-01-15T20:04:35.612Z Usuario carlos ha iniciado sesión
+info: 2024-01-15T20:04:35.613Z ::1 - POST /usuarios/login HTTP/1.1 200 197 - 89.370 ms
+info: 2024-01-15T20:04:46.096Z ::1 - GET /productos/65a58a64873b242cc073fe7d HTTP/1.1 200 109 - 11.094 ms
+info: 2024-01-15T20:04:49.493Z ::1 - GET /productos/65a58a64873b242cc073fasd HTTP/1.1 400 18 - 0.602 ms

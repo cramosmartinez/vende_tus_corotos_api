@@ -14,6 +14,7 @@ function obtenerProducto(id){
   return Producto.findById(id)
 }
 
+
 module.exports = {
   crearProducto,
   obtenerProductos,

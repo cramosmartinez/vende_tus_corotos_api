@@ -6,7 +6,7 @@ const { v4: uuid } = require("uuid");
 const validarProducto = require("./productos.validate");
 const log = require("../../../utils/logger");
 const passport = require("passport");
-const { id } = require("@hapi/joi/lib/base");
+const Producto = require("./productos.model");
 const jwtAuthhenticate = passport.authenticate("jwt", { session: false });
 //Listar
 productosRouter.get("/", (req, res) => {
@@ -15,15 +15,19 @@ productosRouter.get("/", (req, res) => {
 //localhost:3000/productos
 //crear
 productosRouter.post("/", [jwtAuthhenticate, validarProducto], (req, res) => {
-  let nuevoProducto = {
+  new Producto({
     ...req.body,
-    id: uuid(),
     dueño: req.user.username,
-  };
-  productos.push(nuevoProducto);
-  log.info("Se creo un nuevo producto", nuevoProducto);
-  //Creado
-  res.status(201).json(nuevoProducto);
+  })
+    .save()
+    .then((producto) => {
+      log.info("Se creo un nuevo producto", producto);
+      res.status(201).json(producto);
+    })
+    .catch((err) => {
+      log.err("Error al crear un producto", err);
+      res.status(500).send("Error al crear un producto");
+    });
 });
 
 productosRouter.get("/:id", (req, res) => {
@@ -49,12 +53,17 @@ productosRouter.put("/:id", [jwtAuthhenticate, validarProducto], (req, res) => {
   );
   if (indice != -1) {
     if (productos[indice].dueño != req.user.username) {
-      log.info("Usuario ${req.user.username} intento editar un producto con id ${remplazoParaProducto.id} que no le pertenece")
+      log.info(
+        "Usuario ${req.user.username} intento editar un producto con id ${remplazoParaProducto.id} que no le pertenece"
+      );
       res.status(403).send("No tiene permisos para editar este producto");
       return;
     }
     productos[indice] = remplazoParaProducto;
-    log.info("Se actualizo un producto ${remplazoParaProducto.id}", remplazoParaProducto);
+    log.info(
+      "Se actualizo un producto ${remplazoParaProducto.id}",
+      remplazoParaProducto
+    );
     res.status(200).json(remplazoParaProducto);
   } else {
     res.status(404).send("El producto con id " + req.params.id + " no existe.");
@@ -71,7 +80,9 @@ productosRouter.delete("/:id", jwtAuthhenticate, (req, res) => {
     res.status(404).send("El producto con id " + req.params.id + " no existe.");
   }
   if (productos[indiceBorrar].dueño != req.user.username) {
-    log.info("Usuario ${req.user.username} intento borrar un producto con id ${req.params.id} que no le pertenece")
+    log.info(
+      "Usuario ${req.user.username} intento borrar un producto con id ${req.params.id} que no le pertenece"
+    );
     res.status(403).send("No tiene permisos para borrar este producto");
     return;
   }

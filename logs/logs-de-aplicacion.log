@@ -3875,3 +3875,131 @@ info: 2024-01-15T17:19:40.904Z ::1 - GET /productos HTTP/1.1 200 182 - 0.444 ms
 info: 2024-01-15T17:20:00.162Z Escuchando el puerto 3000.
 info: 2024-01-15T17:20:01.168Z Escuchando el puerto 3000.
 info: 2024-01-15T17:21:01.942Z Escuchando el puerto 3000.
+info: 2024-01-15T17:30:06.627Z Escuchando el puerto 3000.
+error: 2024-01-15T17:30:36.634Z Fallo la conexion a MongoDB
+info: 2024-01-15T17:30:50.991Z Escuchando el puerto 3000.
+info: 2024-01-15T17:31:15.450Z Escuchando el puerto 3000.
+info: 2024-01-15T17:31:19.677Z Escuchando el puerto 3000.
+info: 2024-01-15T17:31:20.845Z Escuchando el puerto 3000.
+info: 2024-01-15T17:31:23.816Z Escuchando el puerto 3000.
+info: 2024-01-15T17:31:30.563Z Escuchando el puerto 3000.
+info: 2024-01-15T17:31:32.923Z Escuchando el puerto 3000.
+info: 2024-01-15T17:31:37.806Z Escuchando el puerto 3000.
+info: 2024-01-15T17:32:04.193Z Escuchando el puerto 3000.
+error: 2024-01-15T17:32:34.195Z Fallo la conexion a MongoDB
+info: 2024-01-15T17:36:02.357Z Escuchando el puerto 3000.
+info: 2024-01-15T17:36:06.347Z Escuchando el puerto 3000.
+info: 2024-01-15T17:36:10.683Z Escuchando el puerto 3000.
+info: 2024-01-15T17:36:20.245Z Escuchando el puerto 3000.
+error: 2024-01-15T17:36:50.248Z Fallo la conexion a MongoDB
+info: 2024-01-15T17:38:39.607Z Escuchando el puerto 3000.
+info: 2024-01-15T17:38:54.688Z Escuchando el puerto 3000.
+info: 2024-01-15T17:38:57.054Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:00.250Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:08.859Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:16.408Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:19.455Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:21.657Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:26.982Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:31.479Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:37.906Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:43.447Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:47.567Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:49.231Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:54.921Z Escuchando el puerto 3000.
+info: 2024-01-15T17:39:59.384Z Escuchando el puerto 3000.
+info: 2024-01-15T17:40:01.459Z Escuchando el puerto 3000.
+info: 2024-01-15T17:40:04.113Z Escuchando el puerto 3000.
+info: 2024-01-15T17:40:05.468Z Escuchando el puerto 3000.
+info: 2024-01-15T17:40:07.663Z Escuchando el puerto 3000.
+info: 2024-01-15T17:40:13.788Z Escuchando el puerto 3000.
+info: 2024-01-15T17:40:36.512Z Escuchando el puerto 3000.
+info: 2024-01-15T17:40:38.464Z Escuchando el puerto 3000.
+info: 2024-01-15T17:40:51.065Z Escuchando el puerto 3000.
+info: 2024-01-15T17:40:57.254Z Escuchando el puerto 3000.
+info: 2024-01-15T17:41:07.257Z Escuchando el puerto 3000.
+info: 2024-01-15T17:41:09.826Z Escuchando el puerto 3000.
+info: 2024-01-15T17:41:13.392Z Escuchando el puerto 3000.
+info: 2024-01-15T17:41:14.549Z Escuchando el puerto 3000.
+info: 2024-01-15T17:41:16.759Z Escuchando el puerto 3000.
+info: 2024-01-15T17:41:23.283Z Escuchando el puerto 3000.
+info: 2024-01-15T17:41:24.667Z Escuchando el puerto 3000.
+error: 2024-01-15T17:41:54.670Z Fallo la conexion a MongoDB
+error: 2024-01-15T17:42:46.672Z uncaughtException: c is not defined
+ReferenceError: c is not defined
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\productos\productos.routes.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:3:25)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Mon Jan 15 2024 11:42:46 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":3747.328},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":17095,"external":2203592,"heapTotal":15749120,"heapUsed":7956520,"rss":38764544},"pid":9800,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: c is not defined\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js:10:1)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:3:25)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":1,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js","function":null,"line":10,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":25,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-01-15T17:42:51.969Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:08.189Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:27.146Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:29.452Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:30.916Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:32.383Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:34.125Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:47.085Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:49.347Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:55.272Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:57.832Z Escuchando el puerto 3000.
+info: 2024-01-15T17:43:59.940Z Escuchando el puerto 3000.
+info: 2024-01-15T17:44:03.208Z Escuchando el puerto 3000.
+info: 2024-01-15T17:44:04.646Z Escuchando el puerto 3000.
+info: 2024-01-15T17:44:11.163Z Escuchando el puerto 3000.
+error: 2024-01-15T17:44:41.169Z Fallo la conexion a MongoDB
+info: 2024-01-15T17:44:52.708Z Escuchando el puerto 3000.
+error: 2024-01-15T17:45:22.708Z Fallo la conexion a MongoDB
+info: 2024-01-15T17:45:24.267Z Escuchando el puerto 3000.
+info: 2024-01-15T17:45:40.575Z Escuchando el puerto 3000.
+info: 2024-01-15T17:45:45.185Z Escuchando el puerto 3000.
+info: 2024-01-15T17:45:52.717Z Escuchando el puerto 3000.
+info: 2024-01-15T17:46:05.208Z Escuchando el puerto 3000.
+info: 2024-01-15T17:46:07.562Z Escuchando el puerto 3000.
+info: 2024-01-15T17:46:12.505Z Escuchando el puerto 3000.
+info: 2024-01-15T17:46:18.401Z Escuchando el puerto 3000.
+info: 2024-01-15T17:46:23.318Z Escuchando el puerto 3000.
+info: 2024-01-15T17:46:26.981Z Escuchando el puerto 3000.
+info: 2024-01-15T17:46:32.160Z Escuchando el puerto 3000.
+info: 2024-01-15T17:46:41.883Z Escuchando el puerto 3000.
+error: 2024-01-15T17:47:02.732Z uncaughtException: productosRouter.post(...).catch is not a function
+TypeError: productosRouter.post(...).catch is not a function
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\productos\productos.routes.js:32:11)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:3:25)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Mon Jan 15 2024 11:47:02 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":4003.39},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262711,"external":21062496,"heapTotal":29519872,"heapUsed":15072380,"rss":53002240},"pid":8716,"uid":null,"version":"v20.10.0"},"stack":"TypeError: productosRouter.post(...).catch is not a function\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js:32:11)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:3:25)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":11,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js","function":null,"line":32,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":25,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+error: 2024-01-15T17:47:05.474Z uncaughtException: productosRouter.post(...).catch is not a function
+TypeError: productosRouter.post(...).catch is not a function
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\productos\productos.routes.js:32:11)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:3:25)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Mon Jan 15 2024 11:47:05 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":4006.125},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262711,"external":20636504,"heapTotal":30568448,"heapUsed":16865012,"rss":50765824},"pid":9060,"uid":null,"version":"v20.10.0"},"stack":"TypeError: productosRouter.post(...).catch is not a function\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js:32:11)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:3:25)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":11,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\productos\\productos.routes.js","function":null,"line":32,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":25,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":3,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-01-15T17:47:17.782Z Escuchando el puerto 3000.
+info: 2024-01-15T17:47:21.061Z Escuchando el puerto 3000.
+info: 2024-01-15T17:47:28.293Z Escuchando el puerto 3000.
+info: 2024-01-15T17:47:32.119Z Escuchando el puerto 3000.
+info: 2024-01-15T17:47:40.241Z Escuchando el puerto 3000.
+info: 2024-01-15T17:47:45.659Z Escuchando el puerto 3000.
+error: 2024-01-15T17:48:15.659Z Fallo la conexion a MongoDB
+info: 2024-01-15T17:48:54.748Z Escuchando el puerto 3000.
+info: 2024-01-15T17:48:55.889Z Escuchando el puerto 3000.
+info: 2024-01-15T17:49:03.912Z Escuchando el puerto 3000.
+info: 2024-01-15T17:49:05.264Z Escuchando el puerto 3000.
+error: 2024-01-15T17:49:35.267Z Fallo la conexion a MongoDB

@@ -27,34 +27,24 @@ usuariosRouter.get("/", (req, res) => {
 
 usuariosRouter.post("/", validarUsuario, (req, res) => {
   let nuevoUsuario = req.body;
-
-  let indice = _.findIndex(usuarios, (usuario) => {
-    return (
-      usuario.username === nuevoUsuario.username ||
-      usuario.email === nuevoUsuario.email
-    );
-  });
-
-  if (indice !== -1) {
-    log.info("El usuario ya existe");
+  usuariosController.usuarioExiste(nuevoUsuario).then((usuarioExiste) => {
+    log.warn("El usuario ya existe");
     return res.status(409).send("El usuario ya existe");
-  }
-
+  });
   bcrypt.hash(nuevoUsuario.password, 10, (err, hashedPassword) => {
     if (err) {
       log.error("Error al encriptar la contraseña");
       return res.status(500).send("Error al encriptar la contraseña");
     }
-
-    usuarios.push({
-      username: nuevoUsuario.username,
-      password: hashedPassword,
-      email: nuevoUsuario.email,
-      id: uuid(),
-    });
-
-    log.info("Se creó un nuevo usuario", nuevoUsuario);
-    res.status(201).json(nuevoUsuario);
+    usuariosController
+      .crearUsuario(nuevoUsuario, hashedPassword)
+      .then((nuevoUsuario) => {
+        res.status(201).json("Se creó un nuevo usuario", nuevoUsuario);
+      })
+      .catch((err) => {
+        log.error("Error al crear un usuario", err);
+        res.status(500).send("Error al crear un usuario");
+      });
   });
 });
 

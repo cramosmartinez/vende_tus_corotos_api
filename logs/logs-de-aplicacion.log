@@ -5205,3 +5205,41 @@ info: 2024-01-16T18:49:58.268Z ::1 - GET /productos HTTP/1.1 200 221 - 1.717 ms
 info: 2024-01-16T18:53:27.173Z Escuchando el puerto 3000.
 info: 2024-01-16T18:53:45.291Z Escuchando el puerto 3000.
 info: 2024-01-16T18:53:46.353Z Escuchando el puerto 3000.
+info: 2024-01-16T18:54:22.921Z Se creó un nuevo usuario {"email":"cramosmartinez5@gmail.com","password":"12345678","username":"carlos"}
+info: 2024-01-16T18:54:22.924Z ::1 - POST /usuarios HTTP/1.1 201 79 - 99.474 ms
+info: 2024-01-16T18:54:26.098Z Usuario carlos ha iniciado sesión
+info: 2024-01-16T18:54:26.099Z ::1 - POST /usuarios/login HTTP/1.1 200 197 - 83.352 ms
+info: 2024-01-16T18:54:39.571Z Usuario carlos esta autenticado
+info: 2024-01-16T18:54:39.588Z Se actualizo un producto
+info: 2024-01-16T18:54:39.589Z ::1 - PUT /productos/65a58da352398164fe02f9dd HTTP/1.1 200 109 - 19.540 ms
+info: 2024-01-16T18:55:05.586Z Usuario carlos esta autenticado
+info: 2024-01-16T18:55:05.590Z Se actualizo un producto
+info: 2024-01-16T18:55:05.591Z ::1 - PUT /productos/65a58da352398164fe02f9dd HTTP/1.1 200 109 - 5.319 ms
+info: 2024-01-16T18:55:08.644Z ::1 - GET /productos HTTP/1.1 200 221 - 2.475 ms
+info: 2024-01-16T19:36:14.651Z Escuchando el puerto 3000.
+info: 2024-01-16T19:36:21.755Z Escuchando el puerto 3000.
+info: 2024-01-16T19:36:24.837Z Escuchando el puerto 3000.
+info: 2024-01-16T19:36:26.930Z Escuchando el puerto 3000.
+info: 2024-01-16T19:36:29.687Z Escuchando el puerto 3000.
+info: 2024-01-16T19:36:30.860Z Escuchando el puerto 3000.
+info: 2024-01-16T19:36:35.526Z Escuchando el puerto 3000.
+info: 2024-01-16T19:36:40.219Z Escuchando el puerto 3000.
+info: 2024-01-16T19:36:42.121Z Escuchando el puerto 3000.
+info: 2024-01-16T19:36:52.703Z Escuchando el puerto 3000.
+info: 2024-01-16T19:38:18.538Z Escuchando el puerto 3000.
+info: 2024-01-16T19:38:44.539Z Escuchando el puerto 3000.
+info: 2024-01-16T19:38:47.251Z Escuchando el puerto 3000.
+info: 2024-01-16T19:38:48.757Z Escuchando el puerto 3000.
+info: 2024-01-16T19:38:50.322Z Escuchando el puerto 3000.
+info: 2024-01-16T19:38:53.655Z Escuchando el puerto 3000.
+info: 2024-01-16T19:39:00.098Z Escuchando el puerto 3000.
+info: 2024-01-16T19:39:04.706Z Escuchando el puerto 3000.
+info: 2024-01-16T19:39:08.682Z Escuchando el puerto 3000.
+info: 2024-01-16T19:39:12.251Z Escuchando el puerto 3000.
+info: 2024-01-16T19:39:18.650Z Escuchando el puerto 3000.
+info: 2024-01-16T19:39:21.132Z Escuchando el puerto 3000.
+info: 2024-01-16T19:39:23.225Z Escuchando el puerto 3000.
+info: 2024-01-16T19:39:27.275Z Escuchando el puerto 3000.
+info: 2024-01-16T19:48:48.449Z Escuchando el puerto 3000.
+info: 2024-01-16T19:48:49.394Z Escuchando el puerto 3000.
+info: 2024-01-16T19:48:55.853Z Escuchando el puerto 3000.

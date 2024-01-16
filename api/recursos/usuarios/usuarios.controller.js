@@ -12,7 +12,7 @@ function crearUsuario(usuario, hashedPassword) {
 function usuarioExiste(usuario, email) {
   return new Promise((resolve, reject) => {
     Usuario.find()
-      .or([{ username: usuario }, { email: email }])
+      .or([{ "username": usuario }, { "email": email }])
       .then((usuarios) => {
         resolve(usuarios.length > 0);
       })
@@ -25,5 +25,5 @@ function usuarioExiste(usuario, email) {
 module.exports = {
   obtenerUsuarios,
   crearUsuario,
-  usuarioExiste,    
+  usuarioExiste,
 };

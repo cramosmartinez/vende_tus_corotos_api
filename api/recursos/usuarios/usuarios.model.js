@@ -13,8 +13,7 @@ const usuarioSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    minlength: 1,
     required: [true, "Usuario debe tener un password"],
   },
 });
-module.exports = mongoose.model("usuarios", usuarioSchema);
+module.exports = mongoose.model("usuario", usuarioSchema);

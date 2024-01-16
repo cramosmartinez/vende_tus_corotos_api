@@ -5243,3 +5243,182 @@ info: 2024-01-16T19:39:27.275Z Escuchando el puerto 3000.
 info: 2024-01-16T19:48:48.449Z Escuchando el puerto 3000.
 info: 2024-01-16T19:48:49.394Z Escuchando el puerto 3000.
 info: 2024-01-16T19:48:55.853Z Escuchando el puerto 3000.
+info: 2024-01-16T19:49:02.444Z Escuchando el puerto 3000.
+info: 2024-01-16T19:51:45.939Z Escuchando el puerto 3000.
+info: 2024-01-16T19:51:55.524Z Escuchando el puerto 3000.
+info: 2024-01-16T19:52:02.467Z Escuchando el puerto 3000.
+info: 2024-01-16T19:52:05.529Z Escuchando el puerto 3000.
+info: 2024-01-16T19:52:55.845Z Escuchando el puerto 3000.
+info: 2024-01-16T19:53:02.063Z Escuchando el puerto 3000.
+info: 2024-01-16T19:53:04.446Z Escuchando el puerto 3000.
+info: 2024-01-16T19:53:06.950Z Escuchando el puerto 3000.
+info: 2024-01-16T19:53:10.543Z Escuchando el puerto 3000.
+info: 2024-01-16T19:53:12.186Z Escuchando el puerto 3000.
+info: 2024-01-16T19:53:14.709Z Escuchando el puerto 3000.
+info: 2024-01-16T19:54:28.149Z Escuchando el puerto 3000.
+info: 2024-01-16T19:54:31.659Z Escuchando el puerto 3000.
+info: 2024-01-16T19:54:34.716Z Escuchando el puerto 3000.
+error: 2024-01-16T19:54:47.573Z uncaughtException: cons is not defined
+ReferenceError: cons is not defined
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Tue Jan 16 2024 13:54:47 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10746.218},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262712,"external":20636505,"heapTotal":30830592,"heapUsed":19929632,"rss":52772864},"pid":10776,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: cons is not defined\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:11:1)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":1,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js","function":null,"line":11,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+error: 2024-01-16T19:54:49.417Z uncaughtException: Unexpected token 'const'
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:13
+const validarPedidoDeLogin =
+^^^^^
+
+SyntaxError: Unexpected token 'const'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Tue Jan 16 2024 13:54:49 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10748.062},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":30568448,"heapUsed":19315748,"rss":52834304},"pid":10624,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:13\nconst validarPedidoDeLogin =\n^^^^^\n\nSyntaxError: Unexpected token 'const'\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-16T19:54:51.111Z uncaughtException: Missing initializer in const declaration
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:11
+const usu
+      ^^^
+
+SyntaxError: Missing initializer in const declaration
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Tue Jan 16 2024 13:54:51 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10749.765},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":29782016,"heapUsed":17685924,"rss":55386112},"pid":7016,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:11\nconst usu\n      ^^^\n\nSyntaxError: Missing initializer in const declaration\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-01-16T19:54:53.225Z Escuchando el puerto 3000.
+info: 2024-01-16T19:55:01.021Z Escuchando el puerto 3000.
+info: 2024-01-16T19:55:02.824Z Escuchando el puerto 3000.
+info: 2024-01-16T19:55:03.836Z Escuchando el puerto 3000.
+error: 2024-01-16T19:55:07.408Z uncaughtException: Unexpected end of input
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:90
+
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Tue Jan 16 2024 13:55:07 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10766.062},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":29782016,"heapUsed":17792272,"rss":55476224},"pid":7808,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:90\n\n\n\nSyntaxError: Unexpected end of input\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-16T19:55:12.863Z uncaughtException: Unexpected end of input
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:89
+
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Tue Jan 16 2024 13:55:12 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10771.515},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":30044160,"heapUsed":17833688,"rss":55955456},"pid":6024,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:89\n\n\n\nSyntaxError: Unexpected end of input\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-16T19:55:16.660Z uncaughtException: Unexpected end of input
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:90
+
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Tue Jan 16 2024 13:55:16 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10775.312},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":30830592,"heapUsed":19514004,"rss":52928512},"pid":11024,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:90\n\n\n\nSyntaxError: Unexpected end of input\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-16T19:55:18.301Z uncaughtException: Malformed arrow function parameter list
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:19
+  .then(usuarios) => {
+   ^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Tue Jan 16 2024 13:55:18 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10776.953},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":31092736,"heapUsed":19570584,"rss":53145600},"pid":4288,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:19\n  .then(usuarios) => {\n   ^^^^^^^^^^^^^\n\nSyntaxError: Malformed arrow function parameter list\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-16T19:55:19.263Z uncaughtException: Unexpected end of input
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:90
+
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Tue Jan 16 2024 13:55:19 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10777.921},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":30830592,"heapUsed":19437884,"rss":52809728},"pid":9524,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:90\n\n\n\nSyntaxError: Unexpected end of input\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-16T19:55:20.403Z uncaughtException: Unexpected end of input
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:91
+
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Tue Jan 16 2024 13:55:20 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10779.015},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":30044160,"heapUsed":17723504,"rss":55603200},"pid":8848,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:91\n\n\n\nSyntaxError: Unexpected end of input\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+error: 2024-01-16T19:55:21.716Z uncaughtException: missing ) after argument list
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:21
+  }
+  ^
+
+SyntaxError: missing ) after argument list
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Tue Jan 16 2024 13:55:21 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":10780.359},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":30044160,"heapUsed":17733204,"rss":55586816},"pid":276,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:21\n  }\n  ^\n\nSyntaxError: missing ) after argument list\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-01-16T19:55:24.419Z Escuchando el puerto 3000.
+info: 2024-01-16T19:55:26.007Z Escuchando el puerto 3000.
+info: 2024-01-16T19:55:27.428Z Escuchando el puerto 3000.
+info: 2024-01-16T19:55:32.414Z Escuchando el puerto 3000.

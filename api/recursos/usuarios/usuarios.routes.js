@@ -8,12 +8,21 @@ const usuarios = require("../../../database").usuarios;
 const usuariosRouter = express.Router();
 const jwt = require("jsonwebtoken");
 const config = require("../../../config");
+const usuariosController = require("./usuarios.controller");
 
 const validarPedidoDeLogin =
   require("./usuarios.validate.js").validarPedidoDeLogin;
 
 usuariosRouter.get("/", (req, res) => {
-  res.json(usuarios);
+  usuariosController
+    .obtenerUsuarios()
+    .then((usuarios) => {
+      res.json(usuarios);
+    })
+    .catch((err) => {
+      res.status(500).send("Error al obtener los usuarios");
+      log.error("Error al obtener los usuarios", err);
+    });
 });
 
 usuariosRouter.post("/", validarUsuario, (req, res) => {
@@ -70,7 +79,7 @@ usuariosRouter.post("/login", validarPedidoDeLogin, (req, res) => {
       if (iguales) {
         let token = jwt.sign({ id: usuarios[index].id }, config.jwt.secreto, {
           expiresIn: config.jwt.tiempoDeExpiracion,
-        });        
+        });
         log.info(`Usuario ${usuarioNoAutenticado.username} ha iniciado sesión`);
         res.status(200).json({ jwt: token });
       } else {

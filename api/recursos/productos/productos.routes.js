@@ -63,54 +63,81 @@ productosRouter.get("/:id", validarId, (req, res) => {
 });
 
 //actualizar
-productosRouter.put("/:id", [jwtAuthhenticate, validarProducto], (req, res) => {
-  let remplazoParaProducto = {
-    ...req.body,
-    id: req.params.id,
-    dueño: req.user.username,
-  };
-  let indice = _.findIndex(
-    productos,
-    (producto) => producto.id == remplazoParaProducto.id
-  );
-  if (indice != -1) {
-    if (productos[indice].dueño != req.user.username) {
-      log.info(
-        "Usuario ${req.user.username} intento editar un producto con id ${remplazoParaProducto.id} que no le pertenece"
-      );
-      res.status(403).send("No tiene permisos para editar este producto");
+productosRouter.put(
+  "/:id",
+  [jwtAuthhenticate, validarProducto],
+  async (req, res) => {
+    let id = req.params.id;
+    let requestUsuario = req.user.username;
+    let productoARemplazar;
+    try {
+      productoARemplazar = await productoController.obtenerProducto(id);
+    } catch (err) {
+      log.warn("Error al obtener el producto", err);
+      return res.status(500).send("Error al obtener el producto");
+    }
+    if (!productoARemplazar) {
+      res
+        .status(404)
+        .send("El producto con id " + req.params.id + " no existe.");
       return;
     }
-    productos[indice] = remplazoParaProducto;
-    log.info(
-      "Se actualizo un producto ${remplazoParaProducto.id}",
-      remplazoParaProducto
-    );
-    res.status(200).json(remplazoParaProducto);
-  } else {
-    res.status(404).send("El producto con id " + req.params.id + " no existe.");
+    if (productoARemplazar.dueño != requestUsuario) {
+      log.warn(
+        "Usuario ${req.user.username} intento editar un producto con id ${req.params.id} que no le pertenece"
+      );
+      res.status(401).send("No eres el dueño de este producto");
+      return;
+    }
+    productoController
+      .remplazarProducto(id, req.body, requestUsuario)
+      .then((producto) => {
+        log.info("Se actualizo un producto", producto.toObject);
+        res.status(200).json(producto);
+      })
   }
-});
+);
 //borrar
-productosRouter.delete("/:id", jwtAuthhenticate, (req, res) => {
-  let indiceBorrar = _.findIndex(
-    productos,
-    (producto) => producto.id == req.params.id
-  );
-  if (indiceBorrar === -1) {
-    log.warn("Se intento borrar un producto que no existe");
-    res.status(404).send("El producto con id " + req.params.id + " no existe.");
-  }
-  if (productos[indiceBorrar].dueño != req.user.username) {
-    log.info(
-      "Usuario ${req.user.username} intento borrar un producto con id ${req.params.id} que no le pertenece"
-    );
-    res.status(403).send("No tiene permisos para borrar este producto");
-    return;
-  }
+productosRouter.delete(
+  "/:id",
+  jwtAuthhenticate,
+  validarId,
+  async (req, res) => {
+    let id = req.params.id;
+    let productoABorrar;
+    try {
+      productoABorrar = await productoController.obtenerProducto(id);
+    } catch (err) {
+      log.error("Error al obtener el producto", err);
+      return res.status(500).send("Error al obtener el producto");
+    }
 
-  let borrado = productos.splice(indiceBorrar, 1);
-  res.status(200).json(borrado);
-});
+    if (!productoABorrar) {
+      log.info("Se intentó borrar un producto que no existe");
+      return res
+        .status(404)
+        .send("El producto con id " + req.params.id + " no existe.");
+    }
+
+    let usuarioAutenticado = req.user.username;
+    if (productoABorrar.dueño != usuarioAutenticado) {
+      log.info(
+        `Usuario ${req.user.username} intentó borrar un producto con id ${productoABorrar.id} que no le pertenece`
+      );
+      return res
+        .status(403)
+        .send("No tiene permisos para borrar este producto");
+    }
+
+    try {
+      let productoBorrado = await productoController.borrarProducto(id);
+      log.info("Se borró un producto", productoABorrar);
+      res.json(productoBorrado);
+    } catch (err) {
+      log.error("Error al borrar el producto", err);
+      res.status(500).send("Error al borrar el producto");
+    }
+  }
+);
 
 module.exports = productosRouter;

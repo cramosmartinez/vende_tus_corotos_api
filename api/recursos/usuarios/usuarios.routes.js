@@ -67,60 +67,41 @@ usuariosRouter.post(
   [validarPedidoDeLogin, transformarBodyALowerCase],
   async (req, res) => {
     let usuarioNoAutenticado = req.body;
-    let usuariosRegistrados
+    let usuariosRegistrado;
     try {
-      usuariosRegistrados = await usuariosController.obtenerUsuarios({
+      usuariosRegistrado = await usuariosController.obtenerUsuarios({
         username: usuarioNoAutenticado.username,
       });
-    }catch(err){
-    log.error("Error al obtener usuarios", err);
-    return res.status(500).send("Error al obtener usuarios");
-    
-    
+    } catch (err) {
+      log.error("Error al obtener usuarios", err);
+      return res.status(500).send("Error al obtener usuarios");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-    let index = _.findIndex(usuarios, (usuario) => {
-      return usuario.username === usuarioNoAutenticado.username;
-    });
-
-    if (index === -1) {
+    if (!usuariosRegistrado) {
       log.info(`Usuario ${usuarioNoAutenticado.username} no encontrado`);
       return res.status(401).send("Usuario no encontrado");
     }
-
-    let hashedPassword = usuarios[index].password;
-
-    bcrypt.compare(
-      usuarioNoAutenticado.password,
-      hashedPassword,
-      (err, iguales) => {
-        if (iguales) {
-          let token = jwt.sign({ id: usuarios[index].id }, config.jwt.secreto, {
-            expiresIn: config.jwt.tiempoDeExpiracion,
-          });
-          log.info(
-            `Usuario ${usuarioNoAutenticado.username} ha iniciado sesión`
-          );
-          res.status(200).json({ jwt: token });
-        } else {
-          log.info(
-            `Contraseña incorrecta para usuario ${usuarioNoAutenticado.username}`
-          );
-          res.status(401).send("Contraseña incorrecta");
-        }
-      }
-    );
+    let contraseñaCorrecta;
+    try {
+      contraseñaCorrecta = await bcrypt.compare(
+        usuarioNoAutenticado.password,
+        usuariosRegistrado[0].password
+      );
+    } catch (err) {
+      log.error("Error al comparar contraseñas", err);
+      return res.status(500).send("Error al comparar contraseñas");
+    }
+    if (contraseñaCorrecta) {
+      let token = jwt.sign({ id: usuariosRegistrado.id }, config.jwt.secreto, {
+        expiresIn: config.jwt.tiempoDeExpiracion,
+      });
+      log.info(`Usuario ${usuarioNoAutenticado.username} ha iniciado sesión`);
+      res.status(200).json({ jwt: token });
+    } else {
+      log.info(
+        `Contraseña incorrecta para usuario ${usuarioNoAutenticado.username}`
+      );
+      res.status(401).send("Contraseña incorrecta");
+    }
   }
 );
 

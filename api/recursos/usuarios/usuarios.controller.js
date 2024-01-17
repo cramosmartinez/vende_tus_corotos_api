@@ -10,11 +10,14 @@ function crearUsuario(usuario, hashedPassword) {
   }).save();
 }
 
-function obtenerUsuario({ username: username, id: id }) {
+function obtenerUsuario({ 
+  username: username, 
+  id: id 
+}) {
   if (username) return Usuario.findOne({ username: username });
-  if (id) return Usuario.findOne(id);
+  if (id) return Usuario.findById(id);
   throw new Error(
-    "Funcion obtenerUsuario del controller de usuarios llamada sin username ni id"
+    "Funcion obtenerUsuario del controller fue llamada sin especificar username o id"
   );
 }
 

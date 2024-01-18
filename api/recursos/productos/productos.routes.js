@@ -5,6 +5,7 @@ const log = require("../../../utils/logger");
 const passport = require("passport");
 const productoController = require("./productos.controller");
 const jwtAuthhenticate = passport.authenticate("jwt", { session: false });
+const procesarErrores = require("../../libs/errorHandler").procesarErrores;
 
 function validarId(req, res, next) {
   let id = req.params.id;
@@ -28,17 +29,13 @@ productosRouter.get("/", (req, res) => {
 });
 //localhost:3000/productos
 //crear
-productosRouter.post("/", [jwtAuthhenticate, validarProducto], (req, res) => {
-  productoController
+productosRouter.post("/", [jwtAuthhenticate, validarProducto], procesarErrores, (req, res) => {
+   return productoController
     .crearProducto(req.body, req.user.username)
     .then((producto) => {
       log.info("Se creo un nuevo producto", producto);
       res.status(201).json(producto);
     })
-    .catch((err) => {
-      log.error("Error al crear un producto", err);
-      res.status(500).send("Error al crear un producto");
-    });
 });
 
 productosRouter.get("/:id", validarId, (req, res) => {

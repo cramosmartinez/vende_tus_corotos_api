@@ -1,10 +1,8 @@
 const _ = require("underscore");
-const { v4: uuid } = require("uuid");
 const bcrypt = require("bcryptjs");
 const express = require("express");
 const log = require("../../../utils/logger");
 const validarUsuario = require("./usuarios.validate").validarUsuario;
-const usuarios = require("../../../database").usuarios;
 const usuariosRouter = express.Router();
 const jwt = require("jsonwebtoken");
 const config = require("../../../config");

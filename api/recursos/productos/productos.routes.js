@@ -1,13 +1,10 @@
 const express = require("express");
-const _ = require("underscore");
-const productos = require("../../../database").productos;
 const productosRouter = express.Router();
 const validarProducto = require("./productos.validate");
 const log = require("../../../utils/logger");
 const passport = require("passport");
 const productoController = require("./productos.controller");
 const jwtAuthhenticate = passport.authenticate("jwt", { session: false });
-
 
 function validarId(req, res, next) {
   let id = req.params.id;
@@ -95,7 +92,7 @@ productosRouter.put(
       .then((producto) => {
         log.info("Se actualizo un producto", producto.toObject);
         res.status(200).json(producto);
-      })
+      });
   }
 );
 //borrar

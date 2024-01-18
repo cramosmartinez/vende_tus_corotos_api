@@ -10,15 +10,20 @@ function crearUsuario(usuario, hashedPassword) {
   }).save();
 }
 
-function obtenerUsuario({ 
-  username: username, 
-  id: id 
-}) {
-  if (username) return Usuario.findOne({ username: username });
-  if (id) return Usuario.findById(id);
-  throw new Error(
-    "Funcion obtenerUsuario del controller fue llamada sin especificar username o id"
-  );
+function obtenerUsuario({ username, id }) {
+  return new Promise((resolve, reject) => {
+    if (username) {
+      resolve(Usuario.findOne({ username: username }));
+    } else if (id) {
+      resolve(Usuario.findById(id));
+    } else {
+      reject(
+        new Error(
+          "La función obtenerUsuario fue llamada sin especificar username o id"
+        )
+      );
+    }
+  });
 }
 
 function usuarioExiste(usuario, email) {

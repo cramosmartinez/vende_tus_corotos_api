@@ -91,9 +91,16 @@ usuariosRouter.post(
       return res.status(500).send("Error al comparar contraseñas");
     }
     if (contraseñaCorrecta) {
-      let token = jwt.sign({ id: usuariosRegistrado.id }, config.jwt.secreto, {
-        expiresIn: config.jwt.tiempoDeExpiracion,
-      });
+      let token = jwt.sign(
+        {
+          id: usuariosRegistrado[0].id,
+          username: usuariosRegistrado[0].username
+        },
+        config.jwt.secreto,
+        {
+          expiresIn: config.jwt.tiempoDeExpiracion,
+        }
+      );
       log.info(`Usuario ${usuarioNoAutenticado.username} ha iniciado sesión`);
       res.status(200).json({ jwt: token });
     } else {

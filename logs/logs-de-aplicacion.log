@@ -11156,3 +11156,76 @@ info: 2024-01-17T21:58:44.174Z Token JWT no válido, falta el campo 'id'
 info: 2024-01-17T21:58:44.175Z ::1 - POST /productos HTTP/1.1 401 - - 1.537 ms
 info: 2024-01-17T21:58:49.289Z Escuchando el puerto 3000.
 info: 2024-01-17T21:58:50.655Z Escuchando el puerto 3000.
+info: 2024-01-17T21:58:52.737Z Escuchando el puerto 3000.
+info: 2024-01-18T01:27:56.424Z Escuchando el puerto 3000.
+info: 2024-01-18T01:28:09.132Z Usuario carlos ha iniciado sesión
+info: 2024-01-18T01:28:09.136Z ::1 - POST /usuarios/login HTTP/1.1 200 138 - 122.656 ms
+info: 2024-01-18T01:28:21.710Z ::1 - POST /productos HTTP/1.1 500 1389 - 2.823 ms
+info: 2024-01-18T01:30:55.168Z Escuchando el puerto 3000.
+info: 2024-01-18T01:30:57.105Z Escuchando el puerto 3000.
+info: 2024-01-18T01:30:59.433Z Escuchando el puerto 3000.
+info: 2024-01-18T01:31:54.257Z Usuario carlos ha iniciado sesión
+info: 2024-01-18T01:31:54.262Z ::1 - POST /usuarios/login HTTP/1.1 200 138 - 126.272 ms
+error: 2024-01-18T01:32:05.975Z Error al obtener usuario: La función obtenerUsuario fue llamada sin especificar username o id
+info: 2024-01-18T01:32:05.978Z ::1 - POST /productos HTTP/1.1 500 1268 - 5.346 ms
+error: 2024-01-18T03:19:23.190Z uncaughtException: Unexpected token ')'
+D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:115
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14) {"date":"Wed Jan 17 2024 21:19:23 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12748.843},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262456,"external":20636249,"heapTotal":30044160,"heapUsed":18038632,"rss":55865344},"pid":10176,"uid":null,"version":"v20.10.0"},"stack":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:115\n);\n^\n\nSyntaxError: Unexpected token ')'\n    at internalCompileFunction (node:internal/vm:77:18)\n    at wrapSafe (node:internal/modules/cjs/loader:1288:20)\n    at Module._compile (node:internal/modules/cjs/loader:1340:27)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)","trace":[{"column":18,"file":"node:internal/vm","function":"internalCompileFunction","line":77,"method":null,"native":false},{"column":20,"file":"node:internal/modules/cjs/loader","function":"wrapSafe","line":1288,"method":null,"native":false},{"column":27,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1340,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false}]}
+info: 2024-01-18T03:19:25.911Z Escuchando el puerto 3000.
+info: 2024-01-18T03:19:27.447Z Escuchando el puerto 3000.
+info: 2024-01-18T03:19:31.252Z ::1 - POST /usuarios HTTP/1.1 400 26 - 13.464 ms
+info: 2024-01-18T03:19:32.942Z Usuario carlos ha iniciado sesión
+info: 2024-01-18T03:19:32.943Z ::1 - POST /usuarios/login HTTP/1.1 200 207 - 105.956 ms
+info: 2024-01-18T03:19:41.908Z Usuario carlos esta autenticado
+info: 2024-01-18T03:19:41.927Z Se creo un nuevo producto {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65a898cd1b1d18d1e2acab88","dueño":"carlos","moneda":"USD","nombre":"GAMEPASSSS","precio":1233}}
+info: 2024-01-18T03:19:41.928Z ::1 - POST /productos HTTP/1.1 201 111 - 31.148 ms
+info: 2024-01-18T03:19:57.818Z Escuchando el puerto 3000.
+error: 2024-01-18T03:20:00.020Z uncaughtException: z is not defined
+ReferenceError: z is not defined
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:113:3)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Wed Jan 17 2024 21:20:00 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12785.671},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262712,"external":20636505,"heapTotal":30830592,"heapUsed":20009904,"rss":53223424},"pid":11092,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: z is not defined\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:113:3)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":3,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js","function":null,"line":113,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-01-18T03:20:01.499Z Escuchando el puerto 3000.
+info: 2024-01-18T03:20:04.952Z Escuchando el puerto 3000.
+error: 2024-01-18T03:20:11.304Z uncaughtException: z is not defined
+ReferenceError: z is not defined
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\api\recursos\usuarios\usuarios.routes.js:113:3)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at Object.<anonymous> (D:\Proyectos\vende_tus_corotos_api\index.js:8:24)
+    at Module._compile (node:internal/modules/cjs/loader:1376:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10) {"date":"Wed Jan 17 2024 21:20:11 GMT-0600 (hora estándar central)","error":{},"exception":true,"os":{"loadavg":[0,0,0],"uptime":12796.937},"process":{"argv":["C:\\Program Files (x86)\\nodejs\\node.exe","D:\\Proyectos\\vende_tus_corotos_api\\index.js"],"cwd":"D:\\Proyectos\\vende_tus_corotos_api","execPath":"C:\\Program Files (x86)\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18262712,"external":20636505,"heapTotal":30044160,"heapUsed":18302504,"rss":56459264},"pid":5488,"uid":null,"version":"v20.10.0"},"stack":"ReferenceError: z is not defined\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js:113:3)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)\n    at Module.load (node:internal/modules/cjs/loader:1207:32)\n    at Module._load (node:internal/modules/cjs/loader:1023:12)\n    at Module.require (node:internal/modules/cjs/loader:1235:19)\n    at require (node:internal/modules/helpers:176:18)\n    at Object.<anonymous> (D:\\Proyectos\\vende_tus_corotos_api\\index.js:8:24)\n    at Module._compile (node:internal/modules/cjs/loader:1376:14)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)","trace":[{"column":3,"file":"D:\\Proyectos\\vende_tus_corotos_api\\api\\recursos\\usuarios\\usuarios.routes.js","function":null,"line":113,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":1207,"method":"load","native":false},{"column":12,"file":"node:internal/modules/cjs/loader","function":"Module._load","line":1023,"method":"_load","native":false},{"column":19,"file":"node:internal/modules/cjs/loader","function":"Module.require","line":1235,"method":"require","native":false},{"column":18,"file":"node:internal/modules/helpers","function":"require","line":176,"method":null,"native":false},{"column":24,"file":"D:\\Proyectos\\vende_tus_corotos_api\\index.js","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1376,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1435,"method":".js","native":false}]}
+info: 2024-01-18T03:20:13.180Z Escuchando el puerto 3000.
+info: 2024-01-18T03:20:16.539Z Usuario carlos ha iniciado sesión
+info: 2024-01-18T03:20:16.545Z ::1 - POST /usuarios/login HTTP/1.1 200 207 - 108.797 ms
+info: 2024-01-18T03:20:23.386Z Usuario carlos esta autenticado
+info: 2024-01-18T03:20:23.400Z Se creo un nuevo producto {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65a898f7bc4b2750dbdea60f","dueño":"carlos","moneda":"USD","nombre":"GAMEPASSSS","precio":1233}}
+info: 2024-01-18T03:20:23.402Z ::1 - POST /productos HTTP/1.1 201 111 - 22.639 ms
+info: 2024-01-18T03:20:33.918Z Usuario carlos esta autenticado
+info: 2024-01-18T03:20:33.926Z Se actualizo un producto
+info: 2024-01-18T03:20:33.928Z ::1 - PUT /productos/65a58da352398164fe02f9dd HTTP/1.1 200 109 - 12.601 ms
+info: 2024-01-18T03:20:37.198Z ::1 - GET /productos HTTP/1.1 200 445 - 2.446 ms

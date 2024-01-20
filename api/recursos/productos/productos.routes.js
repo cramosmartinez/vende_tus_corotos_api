@@ -19,21 +19,28 @@ function validarId(req, res, next) {
 
 //Listar
 
-productosRouter.get('/', procesarErrores((req, res) => {
-  return productoController.obtenerProductos()
-    .then(productos => {
-      res.json(productos)
-    })
-}))
+productosRouter.get(
+  "/",
+  procesarErrores((req, res) => {
+    return productoController.obtenerProductos().then((productos) => {
+      res.json(productos);
+    });
+  })
+);
 //localhost:3000/productos
 //crear
-productosRouter.post('/', [jwtAuthhenticate, validarProducto], procesarErrores((req, res) => {
-  return productoController.crearProducto(req.body, req.user.username)
-    .then(producto => {
-      log.info("Producto agregado a la colección productos", producto)
-      res.status(201).json(producto)
-    })
-}))
+productosRouter.post(
+  "/",
+  [jwtAuthhenticate, validarProducto],
+  procesarErrores((req, res) => {
+    return productoController
+      .crearProducto(req.body, req.user.username)
+      .then((producto) => {
+        log.info("Producto agregado a la colección productos", producto);
+        res.status(201).json(producto);
+      });
+  })
+);
 
 productosRouter.get(
   "/:id",

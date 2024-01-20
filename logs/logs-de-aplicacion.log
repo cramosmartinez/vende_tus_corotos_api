@@ -1527,3 +1527,19 @@ info: 2024-01-20T03:04:10.110Z ::1 - GET /productos HTTP/1.1 200 557 - 4.796 ms
 info: 2024-01-20T03:04:16.634Z Escuchando el puerto 3000.
 info: 2024-01-20T03:04:18.721Z Escuchando el puerto 3000.
 info: 2024-01-20T03:04:21.158Z Escuchando el puerto 3000.
+info: 2024-01-20T03:04:24.768Z Escuchando el puerto 3000.
+info: 2024-01-20T03:04:34.396Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-20T03:04:34.400Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 107.974 ms
+info: 2024-01-20T03:04:45.480Z Usuario carlos esta autenticado
+info: 2024-01-20T03:04:45.498Z Producto con id [65a58da352398164fe02f9dd] reemplazado con nuevo producto {"$__":{"activePaths":{"paths":{"__v":"init","_id":"init","dueño":"init","moneda":"init","nombre":"init","precio":"init"},"states":{"init":{"__v":true,"_id":true,"dueño":true,"moneda":true,"nombre":true,"precio":true},"require":{}}},"skipId":true},"$isNew":false,"_doc":{"__v":0,"_id":"65a58da352398164fe02f9dd","dueño":"carlos","moneda":"USD","nombre":"GTX 1234","precio":1000}}
+info: 2024-01-20T03:04:45.498Z ::1 - PUT /productos/65a58da352398164fe02f9dd HTTP/1.1 200 109 - 21.853 ms
+info: 2024-01-20T03:04:52.269Z ::1 - GET /productos HTTP/1.1 200 557 - 3.065 ms
+info: 2024-01-20T03:05:11.011Z Usuario carlos esta autenticado
+info: 2024-01-20T03:05:11.015Z Producto con id [65a898cd1b1d18d1e2acab88] fue borrado
+info: 2024-01-20T03:05:11.016Z ::1 - DELETE /productos/65a898cd1b1d18d1e2acab88 HTTP/1.1 200 111 - 7.189 ms
+info: 2024-01-20T03:05:13.760Z ::1 - GET /productos HTTP/1.1 200 445 - 2.773 ms
+info: 2024-01-20T03:05:18.145Z ::1 - GET /usuarios HTTP/1.1 200 174 - 1.826 ms
+info: 2024-01-20T03:05:31.383Z Usuario carlos esta autenticado
+info: 2024-01-20T03:05:31.396Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65ab387b35d8a24ecaa95a1b","dueño":"carlos","moneda":"USD","nombre":"RTX 4080TI","precio":1233}}
+info: 2024-01-20T03:05:31.397Z ::1 - POST /productos HTTP/1.1 201 111 - 16.772 ms
+info: 2024-01-20T03:06:37.866Z Escuchando el puerto 3000.

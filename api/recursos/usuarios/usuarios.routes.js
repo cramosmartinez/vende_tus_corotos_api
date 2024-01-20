@@ -7,6 +7,10 @@ const usuariosRouter = express.Router();
 const jwt = require("jsonwebtoken");
 const config = require("../../../config");
 const usuariosController = require("./usuarios.controller");
+const procesarErrores = require("../../libs/errorHandler").procesarErrores;
+const {DatosDeUsuarioYaEnUso, CredencialesIncorrectas} = require("./usuarios.error");
+
+
 
 const validarPedidoDeLogin =
   require("./usuarios.validate.js").validarPedidoDeLogin;
@@ -17,97 +21,61 @@ function transformarBodyALowerCase(req, res, next) {
   next();
 }
 
-usuariosRouter.get("/", (req, res) => {
-  usuariosController
-    .obtenerUsuarios()
-    .then((usuarios) => {
-      res.json(usuarios);
+usuariosRouter.get('/', procesarErrores((req, res) => {
+  return usuariosController.obtenerUsuarios()
+    .then(usuarios => {
+      res.json(usuarios)
     })
-    .catch((err) => {
-      res.status(500).send("Error al obtener los usuarios");
-      log.error("Error al obtener los usuarios", err);
-    });
-});
+}))
+
 
 usuariosRouter.post(
   "/",
   [validarUsuario, transformarBodyALowerCase],
-  (req, res) => {
+  procesarErrores((req, res) => {
     let nuevoUsuario = req.body;
-    usuariosController
+
+    return usuariosController
       .usuarioExiste(nuevoUsuario.username, nuevoUsuario.email)
       .then((usuarioExiste) => {
         if (usuarioExiste) {
-          res.status(400).send("Usuario o email ya existen");
-          return;
+          log.warn(
+            `Email [${nuevoUsuario.email}] o username [${nuevoUsuario.username}] ya existen en la base de datos`
+          );
+          throw new DatosDeUsuarioYaEnUso();
         }
-        bcrypt.hash(nuevoUsuario.password, 10, (err, hashedPassword) => {
-          if (err) {
-            res.status(500).send("Error al crear usuario");
-            log.error("Error al crear usuario", err);
-          }
-          usuariosController
-            .crearUsuario(nuevoUsuario, hashedPassword)
-            .then((usuario) => {
-              res.status(201).json(usuario);
-            })
-            .catch((err) => {
-              res.status(500).send("Error al crear usuario");
-              log.error("Error al crear usuario", err);
-            });
-        });
+
+        return bcrypt.hash(nuevoUsuario.password, 10);
+      })
+      .then((hash) => {
+        return usuariosController
+          .crearUsuario(nuevoUsuario, hash)
+          .then((nuevoUsario) => {
+            res.status(201).send("Usuario creado exitósamente.");
+          });
       });
-  }
+  })
 );
 
-usuariosRouter.post(
-  "/login",
-  [validarPedidoDeLogin, transformarBodyALowerCase],
-  async (req, res) => {
-    let usuarioNoAutenticado = req.body;
-    let usuariosRegistrado;
-    try {
-      usuariosRegistrado = await usuariosController.obtenerUsuarios({
-        username: usuarioNoAutenticado.username,
-      });
-    } catch (err) {
-      log.error("Error al obtener usuarios", err);
-      return res.status(500).send("Error al obtener usuarios");
-    }
-    if (!usuariosRegistrado) {
-      log.info(`Usuario ${usuarioNoAutenticado.username} no encontrado`);
-      return res.status(401).send("Usuario no encontrado");
-    }
-    let contraseñaCorrecta;
-    try {
-      contraseñaCorrecta = await bcrypt.compare(
-        usuarioNoAutenticado.password,
-        usuariosRegistrado[0].password
-      );
-    } catch (err) {
-      log.error("Error al comparar contraseñas", err);
-      return res.status(500).send("Error al comparar contraseñas");
-    }
-    if (contraseñaCorrecta) {
-      let token = jwt.sign(
-        {
-          id: usuariosRegistrado[0].id,
-          username: usuariosRegistrado[0].username
-        },
-        config.jwt.secreto,
-        {
-          expiresIn: config.jwt.tiempoDeExpiracion,
-        }
-      );
-      log.info(`Usuario ${usuarioNoAutenticado.username} ha iniciado sesión`);
-      res.status(200).json({ jwt: token });
-    } else {
-      log.info(
-        `Contraseña incorrecta para usuario ${usuarioNoAutenticado.username}`
-      );
-      res.status(401).send("Contraseña incorrecta");
-    }
+usuariosRouter.post('/login', [validarPedidoDeLogin, transformarBodyALowerCase], procesarErrores(async (req, res) => {
+  let usuarioNoAutenticado = req.body
+  
+  
+  let usuarioRegistrado = await usuariosController.obtenerUsuario({ username: usuarioNoAutenticado.username })
+  if (!usuarioRegistrado) { 
+    log.info(`Usuario [${usuarioNoAutenticado.username}] no existe. No pudo ser autenticado`)
+    throw new CredencialesIncorrectas()
   }
-);
+
+  let contraseñaCorrecta = await bcrypt.compare(usuarioNoAutenticado.password, usuarioRegistrado.password)
+  if (contraseñaCorrecta) {
+    let token = jwt.sign({ id: usuarioRegistrado.id }, config.jwt.secreto, { expiresIn: config.jwt.tiempoDeExpiracion })
+    log.info(`Usuario ${usuarioNoAutenticado.username} completo autenticación exitosamente.`)
+    res.status(200).json({ token })
+  } else {
+    log.info(`Usuario ${usuarioNoAutenticado.username} no completo autenticación. Contraseña incorrecta`)
+    throw new CredencialesIncorrectas()
+  }
+}))
 
 module.exports = usuariosRouter;

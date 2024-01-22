@@ -1543,3 +1543,22 @@ info: 2024-01-20T03:05:31.383Z Usuario carlos esta autenticado
 info: 2024-01-20T03:05:31.396Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65ab387b35d8a24ecaa95a1b","dueño":"carlos","moneda":"USD","nombre":"RTX 4080TI","precio":1233}}
 info: 2024-01-20T03:05:31.397Z ::1 - POST /productos HTTP/1.1 201 111 - 16.772 ms
 info: 2024-01-20T03:06:37.866Z Escuchando el puerto 3000.
+info: 2024-01-20T03:06:39.626Z Escuchando el puerto 3000.
+info: 2024-01-20T03:31:58.412Z ::1 - GET /productos HTTP/1.1 200 557 - 14.470 ms
+info: 2024-01-20T03:32:04.120Z ::1 - GET /usuarios HTTP/1.1 200 174 - 2.484 ms
+info: 2024-01-20T03:32:15.564Z ::1 - GET /productos/65ab387b35d8a24ecaa95a1b HTTP/1.1 200 111 - 4.834 ms
+info: 2024-01-22T06:11:04.173Z Escuchando el puerto 3000.
+info: 2024-01-22T06:12:48.337Z Escuchando el puerto 3000.
+info: 2024-01-22T06:13:29.295Z Escuchando el puerto 3000.
+info: 2024-01-22T06:14:17.667Z Escuchando el puerto 3000.
+info: 2024-01-22T06:16:06.807Z Escuchando el puerto 3000.
+info: 2024-01-22T06:17:21.883Z Escuchando el puerto 3000.
+info: 2024-01-22T06:18:14.831Z Escuchando el puerto 3000.
+info: 2024-01-22T06:26:23.777Z Escuchando el puerto 3000.
+info: 2024-01-22T06:27:25.616Z Escuchando el puerto 3000.
+info: 2024-01-22T06:29:28.493Z Escuchando el puerto 3000.
+info: 2024-01-22T06:33:19.696Z Escuchando el puerto 3000.
+info: 2024-01-22T06:36:52.117Z Escuchando el puerto 3000.
+info: 2024-01-22T06:36:52.168Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 6.315 ms
+info: 2024-01-22T06:37:13.738Z Escuchando el puerto 3000.
+info: 2024-01-22T06:37:13.975Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 39.178 ms

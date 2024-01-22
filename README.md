@@ -19,20 +19,6 @@ Asegúrate de tener instalado Node.js y npm en tu máquina.
 
 npm install
 
-Configura las variables de entorno:
-
-Crea un archivo .env en el directorio raíz y define las variables de entorno necesarias, por ejemplo:
-
-env
-
-    PORT=3000
-    MONGODB_URI=mongodb://127.0.0.1:27017/
-    JWT_SECRET="secreto"
-
-Uso
-
-Describe cómo ejecutar y utilizar la API. Proporciona ejemplos de solicitudes y respuestas.
-
 bash
 
 npm run dev

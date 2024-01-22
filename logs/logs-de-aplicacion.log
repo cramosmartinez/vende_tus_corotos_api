@@ -1562,3 +1562,9 @@ info: 2024-01-22T06:36:52.117Z Escuchando el puerto 3000.
 info: 2024-01-22T06:36:52.168Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 6.315 ms
 info: 2024-01-22T06:37:13.738Z Escuchando el puerto 3000.
 info: 2024-01-22T06:37:13.975Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 39.178 ms
+info: 2024-01-22T20:30:11.211Z Escuchando el puerto 3000.
+info: 2024-01-22T20:30:11.415Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 35.370 ms
+info: 2024-01-22T20:30:27.837Z Escuchando el puerto 3000.
+info: 2024-01-22T20:30:27.892Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 6.245 ms
+info: 2024-01-22T20:33:48.377Z Escuchando el puerto 3000.
+info: 2024-01-22T20:33:48.443Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 6.682 ms

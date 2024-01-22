@@ -12,22 +12,34 @@ Asegúrate de tener instalado Node.js y npm en tu máquina.
 
    ```bash
    git clone https://github.com/cramosmartinez/vende_tus_corotos_api.git
-   
-2. Instala las dependencias:
-   ```npm install
-   
-3. Configura las variables de entorno:
-   PORT=3000
-   MONGODB_URI=mongodb://127.0.0.1:27017/
-   JWT_SECRET="secreto"
-   
+
+    Instala las dependencias:
+
+    bash
+
+npm install
+
+Configura las variables de entorno:
+
+Crea un archivo .env en el directorio raíz y define las variables de entorno necesarias, por ejemplo:
+
+env
+
+    PORT=3000
+    MONGODB_URI=tu_url_de_mongodb
+    JWT_SECRET=tu_clave_secreta_para_jwt
+
 Uso
 
-  npm run dev
-  La API estará disponible en http://localhost:3000.
+Describe cómo ejecutar y utilizar la API. Proporciona ejemplos de solicitudes y respuestas.
 
-Contacto
+bash
+
+npm run dev
+
+La API estará disponible en http://localhost:3000.
+Endpoints
+
 
     Autor: Carlos Ramos
     Email: cramosmartinez5@gmail.com
-

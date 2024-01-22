@@ -26,8 +26,8 @@ Crea un archivo .env en el directorio raíz y define las variables de entorno ne
 env
 
     PORT=3000
-    MONGODB_URI=tu_url_de_mongodb
-    JWT_SECRET=tu_clave_secreta_para_jwt
+    MONGODB_URI=mongodb://127.0.0.1:27017/
+    JWT_SECRET="secreto"
 
 Uso
 

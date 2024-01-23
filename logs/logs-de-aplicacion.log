@@ -2070,3 +2070,751 @@ info: 2024-01-22T21:36:09.164Z Usuario daniel completo autenticación exitosamen
 info: 2024-01-22T21:36:09.165Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.176 ms
 info: 2024-01-22T21:36:09.333Z Usuario daniel completo autenticación exitosamente.
 info: 2024-01-22T21:36:09.334Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 81.419 ms
+info: 2024-01-23T02:56:29.426Z Escuchando el puerto 3000.
+info: 2024-01-23T02:56:29.502Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 7.742 ms
+info: 2024-01-23T02:56:29.534Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 5.733 ms
+info: 2024-01-23T02:56:29.735Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 106.757 ms
+warn: 2024-01-23T02:56:29.839Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T02:56:29.847Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 10.304 ms
+warn: 2024-01-23T02:56:29.863Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T02:56:29.866Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 4.206 ms
+info: 2024-01-23T02:56:29.874Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T02:56:29.876Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.391 ms
+info: 2024-01-23T02:56:29.885Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T02:56:29.887Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.703 ms
+info: 2024-01-23T02:56:29.893Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T02:56:29.895Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.229 ms
+info: 2024-01-23T02:56:29.905Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T02:56:29.906Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.380 ms
+info: 2024-01-23T02:56:29.918Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T02:56:29.920Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.076 ms
+info: 2024-01-23T02:56:30.022Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 93.813 ms
+info: 2024-01-23T02:56:30.042Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T02:56:30.043Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.841 ms
+info: 2024-01-23T02:56:30.171Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 117.974 ms
+info: 2024-01-23T02:56:30.271Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 90.742 ms
+info: 2024-01-23T02:56:30.369Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.507 ms
+info: 2024-01-23T02:56:30.374Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.289 ms
+info: 2024-01-23T02:56:30.383Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T02:56:30.385Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 4.604 ms
+info: 2024-01-23T02:56:30.564Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T02:56:30.566Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 88.706 ms
+info: 2024-01-23T02:56:30.759Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T02:56:30.760Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 98.379 ms
+info: 2024-01-23T02:56:30.973Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T02:56:30.974Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 90.415 ms
+info: 2024-01-23T03:57:57.786Z Escuchando el puerto 3000.
+info: 2024-01-23T03:57:57.841Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 6.544 ms
+info: 2024-01-23T03:57:57.874Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.343 ms
+info: 2024-01-23T03:57:58.058Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 123.178 ms
+warn: 2024-01-23T03:57:58.172Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T03:57:58.183Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 13.934 ms
+warn: 2024-01-23T03:57:58.201Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T03:57:58.203Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 5.840 ms
+info: 2024-01-23T03:57:58.210Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T03:57:58.212Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.224 ms
+info: 2024-01-23T03:57:58.222Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T03:57:58.224Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.314 ms
+info: 2024-01-23T03:57:58.230Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T03:57:58.233Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.315 ms
+info: 2024-01-23T03:57:58.240Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T03:57:58.241Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.313 ms
+info: 2024-01-23T03:57:58.251Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T03:57:58.254Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.232 ms
+info: 2024-01-23T03:57:58.356Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 91.758 ms
+info: 2024-01-23T03:57:58.372Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T03:57:58.373Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.297 ms
+info: 2024-01-23T03:57:58.470Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 89.381 ms
+info: 2024-01-23T03:57:58.568Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 90.009 ms
+info: 2024-01-23T03:57:58.670Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.515 ms
+info: 2024-01-23T03:57:58.676Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.306 ms
+info: 2024-01-23T03:57:58.685Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T03:57:58.687Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 5.471 ms
+info: 2024-01-23T03:57:58.872Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T03:57:58.873Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 85.549 ms
+info: 2024-01-23T03:57:59.056Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T03:57:59.057Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 91.501 ms
+info: 2024-01-23T03:57:59.277Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T03:57:59.278Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 121.747 ms
+info: 2024-01-23T17:27:38.063Z Escuchando el puerto 3000.
+info: 2024-01-23T17:27:38.126Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.880 ms
+info: 2024-01-23T17:27:38.153Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.539 ms
+info: 2024-01-23T17:27:38.329Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 98.512 ms
+warn: 2024-01-23T17:27:38.423Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T17:27:38.431Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 8.796 ms
+warn: 2024-01-23T17:27:38.443Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T17:27:38.444Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 3.419 ms
+info: 2024-01-23T17:27:38.451Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T17:27:38.452Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.348 ms
+info: 2024-01-23T17:27:38.459Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T17:27:38.461Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.567 ms
+info: 2024-01-23T17:27:38.468Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T17:27:38.469Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.258 ms
+info: 2024-01-23T17:27:38.476Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T17:27:38.478Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.756 ms
+info: 2024-01-23T17:27:38.487Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T17:27:38.488Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.343 ms
+info: 2024-01-23T17:27:38.583Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 86.162 ms
+info: 2024-01-23T17:27:38.600Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T17:27:38.601Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.179 ms
+info: 2024-01-23T17:27:38.692Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 83.844 ms
+info: 2024-01-23T17:27:38.794Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 92.641 ms
+info: 2024-01-23T17:27:38.886Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.400 ms
+info: 2024-01-23T17:27:38.892Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.304 ms
+info: 2024-01-23T17:27:38.899Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T17:27:38.900Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.131 ms
+info: 2024-01-23T17:27:39.067Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T17:27:39.069Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 81.529 ms
+info: 2024-01-23T17:27:39.241Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T17:27:39.242Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.132 ms
+info: 2024-01-23T17:27:39.411Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T17:27:39.412Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 81.604 ms
+info: 2024-01-23T19:45:39.489Z Escuchando el puerto 3000.
+info: 2024-01-23T19:45:39.535Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.008 ms
+info: 2024-01-23T19:45:39.562Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.342 ms
+info: 2024-01-23T19:45:39.676Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 97.150 ms
+warn: 2024-01-23T19:45:39.770Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T19:45:39.778Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.668 ms
+warn: 2024-01-23T19:45:39.790Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T19:45:39.792Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 4.495 ms
+info: 2024-01-23T19:45:39.802Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T19:45:39.803Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 3.009 ms
+info: 2024-01-23T19:45:39.812Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T19:45:39.813Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.705 ms
+info: 2024-01-23T19:45:39.821Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T19:45:39.822Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.645 ms
+info: 2024-01-23T19:45:39.831Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T19:45:39.832Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.689 ms
+info: 2024-01-23T19:45:39.842Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T19:45:39.844Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.955 ms
+info: 2024-01-23T19:45:39.854Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T19:45:39.856Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.980 ms
+info: 2024-01-23T19:45:39.953Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 87.721 ms
+info: 2024-01-23T19:45:40.046Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.597 ms
+info: 2024-01-23T19:45:40.053Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.501 ms
+info: 2024-01-23T19:45:40.061Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T19:45:40.062Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.952 ms
+info: 2024-01-23T19:45:40.228Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T19:45:40.230Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 81.186 ms
+info: 2024-01-23T19:45:40.398Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:45:40.399Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.954 ms
+info: 2024-01-23T19:45:40.584Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:45:40.585Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 96.272 ms
+info: 2024-01-23T19:51:31.853Z Escuchando el puerto 3000.
+info: 2024-01-23T19:51:31.890Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.209 ms
+info: 2024-01-23T19:51:31.916Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.844 ms
+info: 2024-01-23T19:51:32.033Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 98.673 ms
+warn: 2024-01-23T19:51:32.129Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T19:51:32.133Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 6.004 ms
+warn: 2024-01-23T19:51:32.147Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T19:51:32.149Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.852 ms
+info: 2024-01-23T19:51:32.159Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T19:51:32.160Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 5.357 ms
+info: 2024-01-23T19:51:32.167Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T19:51:32.168Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.285 ms
+info: 2024-01-23T19:51:32.175Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T19:51:32.176Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.998 ms
+info: 2024-01-23T19:51:32.182Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T19:51:32.183Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.467 ms
+info: 2024-01-23T19:51:32.193Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T19:51:32.195Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.789 ms
+info: 2024-01-23T19:51:32.203Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T19:51:32.205Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.836 ms
+info: 2024-01-23T19:51:32.298Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 83.748 ms
+info: 2024-01-23T19:51:32.387Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.812 ms
+info: 2024-01-23T19:51:32.393Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.509 ms
+info: 2024-01-23T19:51:32.400Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T19:51:32.402Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.179 ms
+info: 2024-01-23T19:51:32.569Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T19:51:32.570Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 82.552 ms
+info: 2024-01-23T19:51:32.741Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:51:32.742Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.262 ms
+info: 2024-01-23T19:51:32.910Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:51:32.911Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 81.888 ms
+info: 2024-01-23T19:53:05.535Z Escuchando el puerto 3000.
+info: 2024-01-23T19:53:05.568Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.455 ms
+info: 2024-01-23T19:53:05.595Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.570 ms
+info: 2024-01-23T19:53:05.709Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 96.915 ms
+warn: 2024-01-23T19:53:05.805Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T19:53:05.810Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.361 ms
+warn: 2024-01-23T19:53:05.821Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T19:53:05.822Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 3.077 ms
+info: 2024-01-23T19:53:05.831Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T19:53:05.833Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 4.465 ms
+info: 2024-01-23T19:53:05.840Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T19:53:05.841Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.404 ms
+info: 2024-01-23T19:53:05.848Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T19:53:05.849Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.343 ms
+info: 2024-01-23T19:53:05.855Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T19:53:05.857Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.868 ms
+info: 2024-01-23T19:53:05.865Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T19:53:05.866Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.485 ms
+info: 2024-01-23T19:53:05.874Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T19:53:05.875Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.361 ms
+info: 2024-01-23T19:53:05.966Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 83.413 ms
+info: 2024-01-23T19:53:06.053Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.587 ms
+info: 2024-01-23T19:53:06.058Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.525 ms
+info: 2024-01-23T19:53:06.065Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T19:53:06.066Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.878 ms
+info: 2024-01-23T19:53:06.240Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T19:53:06.241Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 82.894 ms
+info: 2024-01-23T19:53:06.410Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:53:06.411Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.745 ms
+info: 2024-01-23T19:53:06.577Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:53:06.579Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 80.428 ms
+info: 2024-01-23T19:53:59.116Z Escuchando el puerto 3000.
+info: 2024-01-23T19:53:59.150Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.282 ms
+info: 2024-01-23T19:53:59.176Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.939 ms
+info: 2024-01-23T19:53:59.290Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 97.545 ms
+warn: 2024-01-23T19:53:59.386Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T19:53:59.391Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 8.961 ms
+warn: 2024-01-23T19:53:59.402Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T19:53:59.403Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.753 ms
+info: 2024-01-23T19:53:59.413Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T19:53:59.414Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 4.003 ms
+info: 2024-01-23T19:53:59.420Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T19:53:59.422Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.775 ms
+info: 2024-01-23T19:53:59.428Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T19:53:59.429Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.297 ms
+info: 2024-01-23T19:53:59.435Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T19:53:59.436Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.449 ms
+info: 2024-01-23T19:53:59.444Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T19:53:59.445Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.465 ms
+info: 2024-01-23T19:53:59.453Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T19:53:59.454Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.358 ms
+info: 2024-01-23T19:53:59.546Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 83.158 ms
+info: 2024-01-23T19:53:59.632Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.581 ms
+info: 2024-01-23T19:53:59.637Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.533 ms
+info: 2024-01-23T19:53:59.645Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T19:53:59.646Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.003 ms
+info: 2024-01-23T19:53:59.811Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T19:53:59.813Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 80.867 ms
+info: 2024-01-23T19:53:59.981Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:53:59.982Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.832 ms
+info: 2024-01-23T19:54:00.151Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:54:00.152Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 81.768 ms
+info: 2024-01-23T19:57:15.479Z Escuchando el puerto 3000.
+info: 2024-01-23T19:57:15.525Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 2.191 ms
+info: 2024-01-23T19:57:15.546Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 11.054 ms
+info: 2024-01-23T19:57:15.955Z Escuchando el puerto 3000.
+info: 2024-01-23T19:57:15.972Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 2.525 ms
+info: 2024-01-23T19:57:15.988Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.031 ms
+info: 2024-01-23T19:57:16.103Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 96.732 ms
+warn: 2024-01-23T19:57:16.195Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T19:57:16.199Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 5.797 ms
+warn: 2024-01-23T19:57:16.211Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T19:57:16.213Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.675 ms
+info: 2024-01-23T19:57:16.221Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T19:57:16.223Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 4.113 ms
+info: 2024-01-23T19:57:16.229Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T19:57:16.230Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.415 ms
+info: 2024-01-23T19:57:16.236Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T19:57:16.237Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.324 ms
+info: 2024-01-23T19:57:16.244Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T19:57:16.245Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.442 ms
+info: 2024-01-23T19:57:16.252Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T19:57:16.254Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.393 ms
+info: 2024-01-23T19:57:16.261Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T19:57:16.263Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.366 ms
+info: 2024-01-23T19:57:16.353Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 83.164 ms
+info: 2024-01-23T19:57:16.440Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.570 ms
+info: 2024-01-23T19:57:16.446Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.536 ms
+info: 2024-01-23T19:57:16.452Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T19:57:16.453Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.314 ms
+info: 2024-01-23T19:57:16.668Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T19:57:16.670Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 104.500 ms
+info: 2024-01-23T19:57:16.843Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:57:16.844Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 86.348 ms
+info: 2024-01-23T19:57:17.014Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T19:57:17.015Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 81.800 ms
+info: 2024-01-23T20:02:01.044Z Escuchando el puerto 3000.
+info: 2024-01-23T20:02:01.196Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 105.194 ms
+info: 2024-01-23T20:02:01.290Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:02:01.291Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 87.745 ms
+info: 2024-01-23T20:02:01.297Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.419 ms
+info: 2024-01-23T20:02:01.389Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 85.689 ms
+info: 2024-01-23T20:02:01.474Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:02:01.475Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.345 ms
+info: 2024-01-23T20:02:01.488Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 7.628 ms
+info: 2024-01-23T20:02:01.579Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 84.984 ms
+info: 2024-01-23T20:02:01.664Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:02:01.665Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.025 ms
+info: 2024-01-23T20:02:02.024Z Escuchando el puerto 3000.
+info: 2024-01-23T20:02:02.040Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 2.362 ms
+info: 2024-01-23T20:02:02.051Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 2.040 ms
+info: 2024-01-23T20:02:02.156Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 96.674 ms
+warn: 2024-01-23T20:02:02.269Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:02:02.273Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 5.162 ms
+warn: 2024-01-23T20:02:02.283Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:02:02.285Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.783 ms
+info: 2024-01-23T20:02:02.293Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:02:02.294Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 3.348 ms
+info: 2024-01-23T20:02:02.299Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:02:02.300Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.281 ms
+info: 2024-01-23T20:02:02.305Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:02:02.306Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.498 ms
+info: 2024-01-23T20:02:02.314Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:02:02.315Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.439 ms
+info: 2024-01-23T20:02:02.323Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:02:02.324Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.774 ms
+info: 2024-01-23T20:02:02.331Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:02:02.332Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.285 ms
+info: 2024-01-23T20:02:02.423Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 84.105 ms
+info: 2024-01-23T20:02:02.510Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.584 ms
+info: 2024-01-23T20:02:02.515Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.506 ms
+info: 2024-01-23T20:02:02.522Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:02:02.524Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.033 ms
+info: 2024-01-23T20:02:02.690Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:02:02.691Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 80.706 ms
+info: 2024-01-23T20:02:02.859Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:02:02.861Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.585 ms
+info: 2024-01-23T20:02:03.044Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:02:03.045Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.565 ms
+info: 2024-01-23T20:02:55.681Z Escuchando el puerto 3000.
+info: 2024-01-23T20:02:55.718Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 1.820 ms
+info: 2024-01-23T20:02:55.739Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 9.996 ms
+info: 2024-01-23T20:02:56.104Z Escuchando el puerto 3000.
+info: 2024-01-23T20:02:56.118Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 2.468 ms
+info: 2024-01-23T20:02:56.134Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 2.946 ms
+info: 2024-01-23T20:02:56.247Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 97.311 ms
+warn: 2024-01-23T20:02:56.343Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:02:56.347Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 7.348 ms
+warn: 2024-01-23T20:02:56.360Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:02:56.361Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 3.970 ms
+info: 2024-01-23T20:02:56.370Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:02:56.371Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 4.204 ms
+info: 2024-01-23T20:02:56.378Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:02:56.379Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.391 ms
+info: 2024-01-23T20:02:56.385Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:02:56.386Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.462 ms
+info: 2024-01-23T20:02:56.393Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:02:56.394Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.434 ms
+info: 2024-01-23T20:02:56.402Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:02:56.403Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.394 ms
+info: 2024-01-23T20:02:56.410Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:02:56.411Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.359 ms
+info: 2024-01-23T20:02:56.503Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 84.183 ms
+info: 2024-01-23T20:02:56.590Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.708 ms
+info: 2024-01-23T20:02:56.595Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.542 ms
+info: 2024-01-23T20:02:56.601Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:02:56.602Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.361 ms
+info: 2024-01-23T20:02:56.768Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:02:56.769Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 81.607 ms
+info: 2024-01-23T20:02:56.943Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:02:56.943Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 85.199 ms
+info: 2024-01-23T20:02:57.110Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:02:57.111Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 80.843 ms
+info: 2024-01-23T20:04:22.503Z Escuchando el puerto 3000.
+info: 2024-01-23T20:04:22.655Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 105.436 ms
+info: 2024-01-23T20:04:22.748Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:04:22.750Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 87.773 ms
+info: 2024-01-23T20:04:22.759Z Usuario daniel esta autenticado
+info: 2024-01-23T20:04:22.768Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 12.949 ms
+info: 2024-01-23T20:04:28.094Z Escuchando el puerto 3000.
+info: 2024-01-23T20:04:28.118Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 4.112 ms
+info: 2024-01-23T20:04:28.138Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 2.517 ms
+info: 2024-01-23T20:04:28.240Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 92.059 ms
+warn: 2024-01-23T20:04:28.333Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:04:28.338Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 6.102 ms
+warn: 2024-01-23T20:04:28.349Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:04:28.350Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.699 ms
+info: 2024-01-23T20:04:28.357Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:04:28.359Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.899 ms
+info: 2024-01-23T20:04:28.364Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:04:28.365Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.468 ms
+info: 2024-01-23T20:04:28.371Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:04:28.372Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.369 ms
+info: 2024-01-23T20:04:28.378Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:04:28.379Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.480 ms
+info: 2024-01-23T20:04:28.387Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:04:28.388Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.533 ms
+info: 2024-01-23T20:04:28.395Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:04:28.396Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.450 ms
+info: 2024-01-23T20:04:28.484Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 82.114 ms
+info: 2024-01-23T20:04:28.570Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.499 ms
+info: 2024-01-23T20:04:28.575Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.533 ms
+info: 2024-01-23T20:04:28.583Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:04:28.584Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.329 ms
+info: 2024-01-23T20:04:28.750Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:04:28.751Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 81.380 ms
+info: 2024-01-23T20:04:28.920Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:04:28.921Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 81.555 ms
+info: 2024-01-23T20:04:29.091Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:04:29.092Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.582 ms
+info: 2024-01-23T20:05:08.736Z Escuchando el puerto 3000.
+info: 2024-01-23T20:05:08.891Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 109.103 ms
+info: 2024-01-23T20:05:08.986Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:05:08.987Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 89.021 ms
+info: 2024-01-23T20:05:08.997Z Usuario daniel esta autenticado
+info: 2024-01-23T20:05:09.005Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 12.522 ms
+info: 2024-01-23T20:05:14.325Z Escuchando el puerto 3000.
+info: 2024-01-23T20:05:14.362Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 11.044 ms
+info: 2024-01-23T20:05:14.376Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 2.962 ms
+info: 2024-01-23T20:05:14.480Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 95.792 ms
+warn: 2024-01-23T20:05:14.573Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:05:14.577Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 5.613 ms
+warn: 2024-01-23T20:05:14.590Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:05:14.591Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.988 ms
+info: 2024-01-23T20:05:14.599Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:05:14.601Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.715 ms
+info: 2024-01-23T20:05:14.607Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:05:14.608Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.559 ms
+info: 2024-01-23T20:05:14.614Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:05:14.615Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.412 ms
+info: 2024-01-23T20:05:14.621Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:05:14.623Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.655 ms
+info: 2024-01-23T20:05:14.631Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:05:14.632Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.472 ms
+info: 2024-01-23T20:05:14.641Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:05:14.643Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.072 ms
+info: 2024-01-23T20:05:14.735Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 85.308 ms
+info: 2024-01-23T20:05:14.828Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.578 ms
+info: 2024-01-23T20:05:14.834Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.505 ms
+info: 2024-01-23T20:05:14.841Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:05:14.843Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.678 ms
+info: 2024-01-23T20:05:15.013Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:05:15.015Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 83.025 ms
+info: 2024-01-23T20:05:15.190Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:05:15.191Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.695 ms
+info: 2024-01-23T20:05:15.363Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:05:15.364Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.878 ms
+info: 2024-01-23T20:06:35.760Z Escuchando el puerto 3000.
+info: 2024-01-23T20:06:35.827Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 7.284 ms
+info: 2024-01-23T20:06:35.946Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 98.734 ms
+warn: 2024-01-23T20:06:36.042Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:06:36.046Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 7.112 ms
+warn: 2024-01-23T20:06:36.058Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:06:36.059Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.736 ms
+info: 2024-01-23T20:06:36.068Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:06:36.069Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 3.997 ms
+info: 2024-01-23T20:06:36.077Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:06:36.078Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.515 ms
+info: 2024-01-23T20:06:36.084Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:06:36.085Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.523 ms
+info: 2024-01-23T20:06:36.091Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:06:36.092Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.379 ms
+info: 2024-01-23T20:06:36.100Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:06:36.101Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.385 ms
+info: 2024-01-23T20:06:36.111Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:06:36.112Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.366 ms
+info: 2024-01-23T20:06:36.209Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 89.555 ms
+info: 2024-01-23T20:06:36.303Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.579 ms
+info: 2024-01-23T20:06:36.311Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.872 ms
+info: 2024-01-23T20:06:36.318Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:06:36.320Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.019 ms
+info: 2024-01-23T20:06:36.492Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:06:36.493Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 80.635 ms
+info: 2024-01-23T20:06:36.661Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:06:36.662Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.757 ms
+info: 2024-01-23T20:06:36.828Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:06:36.829Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 80.847 ms
+info: 2024-01-23T20:07:10.313Z Escuchando el puerto 3000.
+info: 2024-01-23T20:07:10.355Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.031 ms
+info: 2024-01-23T20:07:10.381Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.303 ms
+info: 2024-01-23T20:07:10.495Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 97.841 ms
+warn: 2024-01-23T20:07:10.591Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:07:10.597Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.418 ms
+warn: 2024-01-23T20:07:10.609Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:07:10.611Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.773 ms
+info: 2024-01-23T20:07:10.619Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:07:10.621Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 3.953 ms
+info: 2024-01-23T20:07:10.628Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:07:10.629Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.420 ms
+info: 2024-01-23T20:07:10.635Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:07:10.636Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.482 ms
+info: 2024-01-23T20:07:10.642Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:07:10.644Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.615 ms
+info: 2024-01-23T20:07:10.653Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:07:10.655Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.473 ms
+info: 2024-01-23T20:07:10.662Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:07:10.663Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.306 ms
+info: 2024-01-23T20:07:10.754Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 84.625 ms
+info: 2024-01-23T20:07:10.841Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.584 ms
+info: 2024-01-23T20:07:10.846Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.510 ms
+info: 2024-01-23T20:07:10.853Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:07:10.855Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.234 ms
+info: 2024-01-23T20:07:11.022Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:07:11.024Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 81.758 ms
+info: 2024-01-23T20:07:11.193Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:07:11.194Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.368 ms
+info: 2024-01-23T20:07:11.362Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:07:11.363Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 81.348 ms
+info: 2024-01-23T20:10:03.419Z Escuchando el puerto 3000.
+info: 2024-01-23T20:10:03.461Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 6.330 ms
+info: 2024-01-23T20:10:03.487Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.431 ms
+info: 2024-01-23T20:10:03.604Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 99.576 ms
+warn: 2024-01-23T20:10:03.698Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:10:03.705Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.430 ms
+warn: 2024-01-23T20:10:03.719Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:10:03.721Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.770 ms
+info: 2024-01-23T20:10:03.730Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:10:03.731Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 4.116 ms
+info: 2024-01-23T20:10:03.738Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:10:03.739Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.149 ms
+info: 2024-01-23T20:10:03.747Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:10:03.748Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.365 ms
+info: 2024-01-23T20:10:03.754Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:10:03.756Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.865 ms
+info: 2024-01-23T20:10:03.764Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:10:03.765Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.501 ms
+info: 2024-01-23T20:10:03.773Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:10:03.774Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.491 ms
+info: 2024-01-23T20:10:03.864Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 82.752 ms
+info: 2024-01-23T20:10:03.950Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.574 ms
+info: 2024-01-23T20:10:03.955Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.556 ms
+info: 2024-01-23T20:10:03.962Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:10:03.964Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.376 ms
+info: 2024-01-23T20:10:04.131Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:10:04.132Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 80.846 ms
+info: 2024-01-23T20:10:04.300Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:10:04.301Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.103 ms
+info: 2024-01-23T20:10:04.469Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:10:04.470Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 80.967 ms
+info: 2024-01-23T20:10:17.030Z Escuchando el puerto 3000.
+info: 2024-01-23T20:10:17.071Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.294 ms
+info: 2024-01-23T20:10:17.097Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.329 ms
+info: 2024-01-23T20:10:17.212Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 97.758 ms
+warn: 2024-01-23T20:10:17.307Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:10:17.313Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.872 ms
+warn: 2024-01-23T20:10:17.326Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:10:17.327Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 3.578 ms
+info: 2024-01-23T20:10:17.336Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:10:17.337Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 4.048 ms
+info: 2024-01-23T20:10:17.344Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:10:17.345Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.573 ms
+info: 2024-01-23T20:10:17.351Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:10:17.352Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.347 ms
+info: 2024-01-23T20:10:17.359Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:10:17.360Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.629 ms
+info: 2024-01-23T20:10:17.368Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:10:17.369Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.459 ms
+info: 2024-01-23T20:10:17.377Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:10:17.378Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.353 ms
+info: 2024-01-23T20:10:17.469Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 84.171 ms
+info: 2024-01-23T20:10:17.555Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.601 ms
+info: 2024-01-23T20:10:17.561Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.509 ms
+info: 2024-01-23T20:10:17.568Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:10:17.570Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.399 ms
+info: 2024-01-23T20:10:17.737Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:10:17.738Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 82.398 ms
+info: 2024-01-23T20:10:17.915Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:10:17.916Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.832 ms
+info: 2024-01-23T20:10:18.085Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:10:18.086Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.155 ms
+info: 2024-01-23T20:10:18.599Z Escuchando el puerto 3000.
+info: 2024-01-23T20:10:18.611Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.744 ms
+info: 2024-01-23T20:10:18.622Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 5.673 ms
+info: 2024-01-23T20:15:43.934Z Escuchando el puerto 3000.
+info: 2024-01-23T20:15:44.087Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 105.897 ms
+info: 2024-01-23T20:15:44.180Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:15:44.182Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 86.920 ms
+info: 2024-01-23T20:15:44.189Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.425 ms
+info: 2024-01-23T20:15:44.203Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 7.404 ms
+info: 2024-01-23T20:15:44.219Z Usuario daniel esta autenticado
+info: 2024-01-23T20:15:44.224Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 9.991 ms
+info: 2024-01-23T20:15:44.237Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.426 ms
+info: 2024-01-23T20:15:44.246Z Usuario daniel esta autenticado
+info: 2024-01-23T20:15:44.248Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 3.782 ms
+info: 2024-01-23T20:15:44.256Z Usuario daniel esta autenticado
+info: 2024-01-23T20:15:44.258Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 4.286 ms
+info: 2024-01-23T20:15:44.266Z Usuario daniel esta autenticado
+info: 2024-01-23T20:15:44.268Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 3.766 ms
+info: 2024-01-23T20:15:44.653Z Escuchando el puerto 3000.
+info: 2024-01-23T20:15:44.667Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 1.972 ms
+info: 2024-01-23T20:15:44.679Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 2.113 ms
+info: 2024-01-23T20:15:44.779Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 92.608 ms
+warn: 2024-01-23T20:15:44.868Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:15:44.872Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 4.860 ms
+warn: 2024-01-23T20:15:44.882Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:15:44.884Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.869 ms
+info: 2024-01-23T20:15:44.891Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:15:44.892Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.630 ms
+info: 2024-01-23T20:15:44.897Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:15:44.898Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.245 ms
+info: 2024-01-23T20:15:44.903Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:15:44.904Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.303 ms
+info: 2024-01-23T20:15:44.911Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:15:44.912Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.411 ms
+info: 2024-01-23T20:15:44.919Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:15:44.919Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.352 ms
+info: 2024-01-23T20:15:44.926Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:15:44.927Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.251 ms
+info: 2024-01-23T20:15:45.018Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 83.238 ms
+info: 2024-01-23T20:15:45.103Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.485 ms
+info: 2024-01-23T20:15:45.108Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.530 ms
+info: 2024-01-23T20:15:45.114Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:15:45.115Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.420 ms
+info: 2024-01-23T20:15:45.283Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:15:45.284Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 80.628 ms
+info: 2024-01-23T20:15:45.451Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:15:45.452Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 81.020 ms
+info: 2024-01-23T20:15:45.617Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:15:45.618Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 80.465 ms
+info: 2024-01-23T20:17:47.412Z Escuchando el puerto 3000.
+info: 2024-01-23T20:17:47.563Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 106.645 ms
+info: 2024-01-23T20:17:47.657Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:17:47.658Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 88.109 ms
+info: 2024-01-23T20:17:47.665Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.450 ms
+info: 2024-01-23T20:17:47.679Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 7.717 ms
+info: 2024-01-23T20:17:47.695Z Usuario daniel esta autenticado
+info: 2024-01-23T20:17:47.701Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 9.951 ms
+info: 2024-01-23T20:17:47.716Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.549 ms
+info: 2024-01-23T20:17:47.725Z Usuario daniel esta autenticado
+info: 2024-01-23T20:17:47.727Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 4.172 ms
+info: 2024-01-23T20:17:47.735Z Usuario daniel esta autenticado
+info: 2024-01-23T20:17:47.736Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 3.789 ms
+info: 2024-01-23T20:17:47.745Z Usuario daniel esta autenticado
+info: 2024-01-23T20:17:47.747Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 4.143 ms
+info: 2024-01-23T20:17:48.080Z Escuchando el puerto 3000.
+info: 2024-01-23T20:17:48.096Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 2.268 ms
+info: 2024-01-23T20:17:48.108Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 2.298 ms
+info: 2024-01-23T20:17:48.215Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 98.866 ms
+warn: 2024-01-23T20:17:48.306Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:17:48.310Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 5.395 ms
+warn: 2024-01-23T20:17:48.320Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:17:48.322Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 3.042 ms
+info: 2024-01-23T20:17:48.329Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:17:48.330Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.517 ms
+info: 2024-01-23T20:17:48.335Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:17:48.336Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.330 ms
+info: 2024-01-23T20:17:48.345Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:17:48.346Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.078 ms
+info: 2024-01-23T20:17:48.353Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:17:48.355Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.326 ms
+info: 2024-01-23T20:17:48.363Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:17:48.364Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.443 ms
+info: 2024-01-23T20:17:48.372Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:17:48.373Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.292 ms
+info: 2024-01-23T20:17:48.468Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 86.707 ms
+info: 2024-01-23T20:17:48.557Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.692 ms
+info: 2024-01-23T20:17:48.563Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.640 ms
+info: 2024-01-23T20:17:48.569Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:17:48.570Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.211 ms
+info: 2024-01-23T20:17:48.738Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:17:48.739Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 81.192 ms
+info: 2024-01-23T20:17:48.909Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:17:48.910Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.479 ms
+info: 2024-01-23T20:17:49.075Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:17:49.076Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 80.697 ms
+info: 2024-01-23T20:19:19.294Z Escuchando el puerto 3000.
+info: 2024-01-23T20:19:19.446Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 104.915 ms
+info: 2024-01-23T20:19:19.540Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:19:19.542Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 88.098 ms
+info: 2024-01-23T20:19:19.549Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.441 ms
+info: 2024-01-23T20:19:19.563Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 7.818 ms
+info: 2024-01-23T20:19:19.574Z ::ffff:127.0.0.1 - GET /productos/65b01f4778c13972d57c6035 HTTP/1.1 200 122 - 2.488 ms
+info: 2024-01-23T20:19:19.586Z Usuario daniel esta autenticado
+info: 2024-01-23T20:19:19.590Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b01f4778c13972d57c603a","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-23T20:19:19.592Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 9.837 ms
+info: 2024-01-23T20:19:19.604Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.368 ms
+info: 2024-01-23T20:19:19.613Z Usuario daniel esta autenticado
+info: 2024-01-23T20:19:19.617Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 6.287 ms
+info: 2024-01-23T20:19:19.628Z Usuario daniel esta autenticado
+info: 2024-01-23T20:19:19.629Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 5.188 ms
+info: 2024-01-23T20:19:19.637Z Usuario daniel esta autenticado
+error: 2024-01-23T20:19:19.642Z Ocurrio un error relacionado a mongoose. Producto validation failed: moneda: Producto debe tener una moneda {"_message":"Producto validation failed","errors":{"moneda":{"kind":"required","message":"Producto debe tener una moneda","name":"ValidatorError","path":"moneda","properties":{"message":"Producto debe tener una moneda","path":"moneda","type":"required"}}},"stack":"ValidationError: Producto validation failed: moneda: Producto debe tener una moneda\n    at model.Object.<anonymous>.Document.invalidate (D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:2994:17\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\schemaType.js:1368:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+info: 2024-01-23T20:19:19.643Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 616 - 8.499 ms
+info: 2024-01-23T20:19:19.654Z Usuario daniel esta autenticado
+info: 2024-01-23T20:19:19.655Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 3.530 ms
+info: 2024-01-23T20:19:19.667Z Usuario daniel esta autenticado
+info: 2024-01-23T20:19:19.669Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-23T20:19:19.670Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 4.943 ms
+info: 2024-01-23T20:19:19.679Z ::ffff:127.0.0.1 - DELETE /productos/65b01f4778c13972d57c6051 HTTP/1.1 401 - - 1.190 ms
+info: 2024-01-23T20:19:19.692Z Usuario daniel esta autenticado
+info: 2024-01-23T20:19:19.693Z Usuario [daniel] no es dueño de producto con id [65b01f4778c13972d57c6057]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-23T20:19:19.695Z ::ffff:127.0.0.1 - DELETE /productos/65b01f4778c13972d57c6057 HTTP/1.1 401 442 - 6.123 ms
+info: 2024-01-23T20:19:19.704Z Usuario daniel esta autenticado
+info: 2024-01-23T20:19:19.708Z Producto con id [65b01f4778c13972d57c605d] fue borrado
+info: 2024-01-23T20:19:19.710Z ::ffff:127.0.0.1 - DELETE /productos/65b01f4778c13972d57c605d HTTP/1.1 200 122 - 7.884 ms
+info: 2024-01-23T20:19:20.031Z Escuchando el puerto 3000.
+info: 2024-01-23T20:19:20.045Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 2.235 ms
+info: 2024-01-23T20:19:20.057Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 2.635 ms
+info: 2024-01-23T20:19:20.164Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 99.688 ms
+warn: 2024-01-23T20:19:20.253Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:19:20.257Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 4.798 ms
+warn: 2024-01-23T20:19:20.265Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:19:20.266Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.192 ms
+info: 2024-01-23T20:19:20.272Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:19:20.274Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.275 ms
+info: 2024-01-23T20:19:20.279Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:19:20.280Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.161 ms
+info: 2024-01-23T20:19:20.286Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:19:20.286Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.284 ms
+info: 2024-01-23T20:19:20.293Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:19:20.294Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.367 ms
+info: 2024-01-23T20:19:20.300Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:19:20.301Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.189 ms
+info: 2024-01-23T20:19:20.308Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:19:20.309Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.219 ms
+info: 2024-01-23T20:19:20.400Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 83.442 ms
+info: 2024-01-23T20:19:20.487Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.568 ms
+info: 2024-01-23T20:19:20.492Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.488 ms
+info: 2024-01-23T20:19:20.498Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:19:20.499Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.100 ms
+info: 2024-01-23T20:19:20.665Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:19:20.666Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 81.502 ms
+info: 2024-01-23T20:19:20.833Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:19:20.834Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 81.057 ms
+info: 2024-01-23T20:19:20.999Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:19:21.000Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 80.575 ms
+info: 2024-01-23T20:20:09.586Z Escuchando el puerto 3000.
+info: 2024-01-23T20:20:09.628Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 6.081 ms
+info: 2024-01-23T20:20:09.655Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.227 ms
+info: 2024-01-23T20:20:09.769Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 98.463 ms
+warn: 2024-01-23T20:20:09.864Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-23T20:20:09.870Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.552 ms
+warn: 2024-01-23T20:20:09.883Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-23T20:20:09.884Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.756 ms
+info: 2024-01-23T20:20:09.893Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-23T20:20:09.895Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 4.247 ms
+info: 2024-01-23T20:20:09.902Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-23T20:20:09.903Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.389 ms
+info: 2024-01-23T20:20:09.910Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-23T20:20:09.911Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.380 ms
+info: 2024-01-23T20:20:09.917Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-23T20:20:09.918Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.493 ms
+info: 2024-01-23T20:20:09.927Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-23T20:20:09.929Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.476 ms
+info: 2024-01-23T20:20:09.936Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-23T20:20:09.937Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.384 ms
+info: 2024-01-23T20:20:10.027Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 82.757 ms
+info: 2024-01-23T20:20:10.114Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.575 ms
+info: 2024-01-23T20:20:10.119Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.513 ms
+info: 2024-01-23T20:20:10.126Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-23T20:20:10.127Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.795 ms
+info: 2024-01-23T20:20:10.297Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-23T20:20:10.299Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 82.530 ms
+info: 2024-01-23T20:20:10.470Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:20:10.471Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.548 ms
+info: 2024-01-23T20:20:10.637Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:20:10.638Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 80.658 ms
+info: 2024-01-23T20:20:11.115Z Escuchando el puerto 3000.
+info: 2024-01-23T20:20:11.226Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 93.344 ms
+info: 2024-01-23T20:20:11.310Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-23T20:20:11.311Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.242 ms
+info: 2024-01-23T20:20:11.316Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.468 ms
+info: 2024-01-23T20:20:11.326Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 4.942 ms
+info: 2024-01-23T20:20:11.335Z ::ffff:127.0.0.1 - GET /productos/65b01f7bcfc6faec4972665b HTTP/1.1 200 122 - 2.199 ms
+info: 2024-01-23T20:20:11.344Z Usuario daniel esta autenticado
+info: 2024-01-23T20:20:11.348Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b01f7bcfc6faec49726660","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-23T20:20:11.349Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 8.045 ms
+info: 2024-01-23T20:20:11.355Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.527 ms
+info: 2024-01-23T20:20:11.362Z Usuario daniel esta autenticado
+info: 2024-01-23T20:20:11.365Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 5.239 ms
+info: 2024-01-23T20:20:11.372Z Usuario daniel esta autenticado
+info: 2024-01-23T20:20:11.373Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 3.746 ms
+info: 2024-01-23T20:20:11.380Z Usuario daniel esta autenticado
+error: 2024-01-23T20:20:11.383Z Ocurrio un error relacionado a mongoose. Producto validation failed: moneda: Producto debe tener una moneda {"_message":"Producto validation failed","errors":{"moneda":{"kind":"required","message":"Producto debe tener una moneda","name":"ValidatorError","path":"moneda","properties":{"message":"Producto debe tener una moneda","path":"moneda","type":"required"}}},"stack":"ValidationError: Producto validation failed: moneda: Producto debe tener una moneda\n    at model.Object.<anonymous>.Document.invalidate (D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:2994:17\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\schemaType.js:1368:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+info: 2024-01-23T20:20:11.384Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 616 - 5.462 ms
+info: 2024-01-23T20:20:11.393Z Usuario daniel esta autenticado
+info: 2024-01-23T20:20:11.394Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 2.626 ms
+info: 2024-01-23T20:20:11.401Z Usuario daniel esta autenticado
+info: 2024-01-23T20:20:11.403Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-23T20:20:11.404Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 4.085 ms
+info: 2024-01-23T20:20:11.413Z ::ffff:127.0.0.1 - DELETE /productos/65b01f7bcfc6faec49726677 HTTP/1.1 401 - - 1.166 ms
+info: 2024-01-23T20:20:11.422Z Usuario daniel esta autenticado
+info: 2024-01-23T20:20:11.424Z Usuario [daniel] no es dueño de producto con id [65b01f7bcfc6faec4972667d]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-23T20:20:11.425Z ::ffff:127.0.0.1 - DELETE /productos/65b01f7bcfc6faec4972667d HTTP/1.1 401 442 - 5.309 ms
+info: 2024-01-23T20:20:11.434Z Usuario daniel esta autenticado
+info: 2024-01-23T20:20:11.437Z Producto con id [65b01f7bcfc6faec49726683] fue borrado
+info: 2024-01-23T20:20:11.439Z ::ffff:127.0.0.1 - DELETE /productos/65b01f7bcfc6faec49726683 HTTP/1.1 200 122 - 6.631 ms

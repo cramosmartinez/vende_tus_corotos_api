@@ -14,10 +14,7 @@ const errorHandler = require("./api/libs/errorHandler");
 passport.use(authJWT);
 
 //MongoDB => NoSql = > no hay tablas, si no colecciones de documentos
-mongoose.connect("mongodb://127.0.0.1:27017/vendetuscorotos", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect("mongodb://127.0.0.1:27017/vendetuscorotos", {});
 
 const app = express();
 app.use(bodyParser.json());

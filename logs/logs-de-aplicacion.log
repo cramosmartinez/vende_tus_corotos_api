@@ -2818,3 +2818,586 @@ info: 2024-01-23T20:20:11.425Z ::ffff:127.0.0.1 - DELETE /productos/65b01f7bcfc6
 info: 2024-01-23T20:20:11.434Z Usuario daniel esta autenticado
 info: 2024-01-23T20:20:11.437Z Producto con id [65b01f7bcfc6faec49726683] fue borrado
 info: 2024-01-23T20:20:11.439Z ::ffff:127.0.0.1 - DELETE /productos/65b01f7bcfc6faec49726683 HTTP/1.1 200 122 - 6.631 ms
+info: 2024-01-25T03:40:40.772Z Escuchando el puerto 3000.
+info: 2024-01-25T03:40:40.850Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 6.032 ms
+info: 2024-01-25T03:40:40.880Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.657 ms
+info: 2024-01-25T03:40:41.076Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 116.205 ms
+warn: 2024-01-25T03:40:41.182Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T03:40:41.188Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.182 ms
+warn: 2024-01-25T03:40:41.201Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T03:40:41.203Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.987 ms
+info: 2024-01-25T03:40:41.213Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T03:40:41.214Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 4.541 ms
+info: 2024-01-25T03:40:41.220Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T03:40:41.221Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.446 ms
+info: 2024-01-25T03:40:41.229Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T03:40:41.230Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.993 ms
+info: 2024-01-25T03:40:41.236Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T03:40:41.238Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.456 ms
+info: 2024-01-25T03:40:41.247Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T03:40:41.249Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.614 ms
+info: 2024-01-25T03:40:41.256Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T03:40:41.257Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.331 ms
+info: 2024-01-25T03:40:41.360Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 91.888 ms
+info: 2024-01-25T03:40:41.450Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.633 ms
+info: 2024-01-25T03:40:41.456Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.518 ms
+info: 2024-01-25T03:40:41.466Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T03:40:41.467Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.139 ms
+info: 2024-01-25T03:40:41.645Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T03:40:41.646Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 84.914 ms
+info: 2024-01-25T03:40:41.824Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:40:41.825Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 88.908 ms
+info: 2024-01-25T03:40:42.001Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:40:42.002Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 86.536 ms
+info: 2024-01-25T03:40:42.447Z Escuchando el puerto 3000.
+info: 2024-01-25T03:40:42.572Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 103.443 ms
+info: 2024-01-25T03:40:42.664Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:40:42.665Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 87.484 ms
+info: 2024-01-25T03:40:42.673Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.488 ms
+info: 2024-01-25T03:40:42.687Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 7.503 ms
+info: 2024-01-25T03:40:42.698Z ::ffff:127.0.0.1 - GET /productos/65b1d83a853318c5eabb73fa HTTP/1.1 200 122 - 2.091 ms
+info: 2024-01-25T03:40:42.707Z Usuario daniel esta autenticado
+info: 2024-01-25T03:40:42.712Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1d83a853318c5eabb73ff","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-25T03:40:42.713Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 9.606 ms
+info: 2024-01-25T03:40:42.719Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.304 ms
+info: 2024-01-25T03:40:42.727Z Usuario daniel esta autenticado
+info: 2024-01-25T03:40:42.732Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 8.854 ms
+info: 2024-01-25T03:40:42.739Z Usuario daniel esta autenticado
+info: 2024-01-25T03:40:42.742Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 4.377 ms
+info: 2024-01-25T03:40:42.750Z Usuario daniel esta autenticado
+error: 2024-01-25T03:40:42.753Z Ocurrio un error relacionado a mongoose. Producto validation failed: moneda: Producto debe tener una moneda {"_message":"Producto validation failed","errors":{"moneda":{"kind":"required","message":"Producto debe tener una moneda","name":"ValidatorError","path":"moneda","properties":{"message":"Producto debe tener una moneda","path":"moneda","type":"required"}}},"stack":"ValidationError: Producto validation failed: moneda: Producto debe tener una moneda\n    at model.Object.<anonymous>.Document.invalidate (D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:2994:17\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\schemaType.js:1368:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+info: 2024-01-25T03:40:42.754Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 616 - 6.626 ms
+info: 2024-01-25T03:40:42.766Z Usuario daniel esta autenticado
+info: 2024-01-25T03:40:42.767Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 2.866 ms
+info: 2024-01-25T03:40:42.776Z Usuario daniel esta autenticado
+info: 2024-01-25T03:40:42.778Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-25T03:40:42.779Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 5.838 ms
+info: 2024-01-25T03:40:42.788Z ::ffff:127.0.0.1 - DELETE /productos/65b1d83a853318c5eabb7416 HTTP/1.1 401 - - 1.428 ms
+info: 2024-01-25T03:40:42.801Z Usuario daniel esta autenticado
+info: 2024-01-25T03:40:42.803Z Usuario [daniel] no es dueño de producto con id [65b1d83a853318c5eabb741c]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-25T03:40:42.804Z ::ffff:127.0.0.1 - DELETE /productos/65b1d83a853318c5eabb741c HTTP/1.1 401 442 - 5.675 ms
+info: 2024-01-25T03:40:42.815Z Usuario daniel esta autenticado
+info: 2024-01-25T03:40:42.820Z Producto con id [65b1d83a853318c5eabb7422] fue borrado
+info: 2024-01-25T03:40:42.820Z ::ffff:127.0.0.1 - DELETE /productos/65b1d83a853318c5eabb7422 HTTP/1.1 200 122 - 7.688 ms
+info: 2024-01-25T03:45:20.797Z Escuchando el puerto 3000.
+info: 2024-01-25T03:45:20.842Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.232 ms
+info: 2024-01-25T03:45:20.870Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.356 ms
+info: 2024-01-25T03:45:20.992Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 103.762 ms
+warn: 2024-01-25T03:45:21.095Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T03:45:21.101Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.347 ms
+warn: 2024-01-25T03:45:21.113Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T03:45:21.114Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.582 ms
+info: 2024-01-25T03:45:21.121Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T03:45:21.121Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.788 ms
+info: 2024-01-25T03:45:21.128Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T03:45:21.129Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.694 ms
+info: 2024-01-25T03:45:21.134Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T03:45:21.134Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.670 ms
+info: 2024-01-25T03:45:21.140Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T03:45:21.141Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.123 ms
+info: 2024-01-25T03:45:21.151Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T03:45:21.151Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.764 ms
+info: 2024-01-25T03:45:21.159Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T03:45:21.160Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.874 ms
+info: 2024-01-25T03:45:21.251Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 84.097 ms
+info: 2024-01-25T03:45:21.339Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.575 ms
+info: 2024-01-25T03:45:21.345Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.621 ms
+info: 2024-01-25T03:45:21.352Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T03:45:21.353Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.079 ms
+info: 2024-01-25T03:45:21.523Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T03:45:21.524Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 82.116 ms
+info: 2024-01-25T03:45:21.709Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:45:21.709Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 94.029 ms
+info: 2024-01-25T03:45:21.883Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:45:21.883Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.486 ms
+info: 2024-01-25T03:45:22.169Z Escuchando el puerto 3000.
+info: 2024-01-25T03:45:22.284Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 99.582 ms
+info: 2024-01-25T03:45:22.370Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:45:22.371Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.688 ms
+info: 2024-01-25T03:45:22.376Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.641 ms
+info: 2024-01-25T03:45:22.386Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 4.824 ms
+info: 2024-01-25T03:45:22.397Z ::ffff:127.0.0.1 - GET /productos/65b1d9521254297811eea61e HTTP/1.1 200 122 - 2.618 ms
+info: 2024-01-25T03:45:22.405Z Usuario daniel esta autenticado
+info: 2024-01-25T03:45:22.408Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1d9521254297811eea623","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-25T03:45:22.409Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 6.716 ms
+info: 2024-01-25T03:45:22.416Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.377 ms
+info: 2024-01-25T03:45:22.423Z Usuario daniel esta autenticado
+info: 2024-01-25T03:45:22.428Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 7.215 ms
+info: 2024-01-25T03:45:22.435Z Usuario daniel esta autenticado
+info: 2024-01-25T03:45:22.436Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 3.029 ms
+info: 2024-01-25T03:45:22.443Z Usuario daniel esta autenticado
+error: 2024-01-25T03:45:22.449Z Ocurrio un error relacionado a mongoose. Producto validation failed: moneda: Producto debe tener una moneda {"_message":"Producto validation failed","errors":{"moneda":{"kind":"required","message":"Producto debe tener una moneda","name":"ValidatorError","path":"moneda","properties":{"message":"Producto debe tener una moneda","path":"moneda","type":"required"}}},"stack":"ValidationError: Producto validation failed: moneda: Producto debe tener una moneda\n    at model.Object.<anonymous>.Document.invalidate (D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:2994:17\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\schemaType.js:1368:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+info: 2024-01-25T03:45:22.449Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 616 - 9.115 ms
+info: 2024-01-25T03:45:22.460Z Usuario daniel esta autenticado
+info: 2024-01-25T03:45:22.461Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 3.640 ms
+info: 2024-01-25T03:45:22.471Z Usuario daniel esta autenticado
+info: 2024-01-25T03:45:22.472Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-25T03:45:22.472Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 4.234 ms
+info: 2024-01-25T03:45:22.482Z ::ffff:127.0.0.1 - DELETE /productos/65b1d9521254297811eea63a HTTP/1.1 401 - - 1.374 ms
+info: 2024-01-25T03:45:22.494Z Usuario daniel esta autenticado
+info: 2024-01-25T03:45:22.495Z Usuario [daniel] no es dueño de producto con id [65b1d9521254297811eea640]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-25T03:45:22.496Z ::ffff:127.0.0.1 - DELETE /productos/65b1d9521254297811eea640 HTTP/1.1 401 442 - 4.925 ms
+info: 2024-01-25T03:45:22.505Z Usuario daniel esta autenticado
+info: 2024-01-25T03:45:22.510Z Producto con id [65b1d9521254297811eea646] fue borrado
+info: 2024-01-25T03:45:22.511Z ::ffff:127.0.0.1 - DELETE /productos/65b1d9521254297811eea646 HTTP/1.1 200 122 - 7.465 ms
+info: 2024-01-25T03:46:50.218Z Escuchando el puerto 3000.
+info: 2024-01-25T03:46:50.271Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.546 ms
+info: 2024-01-25T03:46:50.300Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.354 ms
+info: 2024-01-25T03:46:50.424Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 105.329 ms
+warn: 2024-01-25T03:46:50.522Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T03:46:50.531Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 11.378 ms
+warn: 2024-01-25T03:46:50.543Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T03:46:50.544Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 3.179 ms
+info: 2024-01-25T03:46:50.551Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T03:46:50.552Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.670 ms
+info: 2024-01-25T03:46:50.558Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T03:46:50.560Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.240 ms
+info: 2024-01-25T03:46:50.566Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T03:46:50.567Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.645 ms
+info: 2024-01-25T03:46:50.572Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T03:46:50.573Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.747 ms
+info: 2024-01-25T03:46:50.582Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T03:46:50.583Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.695 ms
+info: 2024-01-25T03:46:50.593Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T03:46:50.594Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.368 ms
+info: 2024-01-25T03:46:50.691Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 90.684 ms
+info: 2024-01-25T03:46:50.782Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.576 ms
+info: 2024-01-25T03:46:50.787Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.520 ms
+info: 2024-01-25T03:46:50.795Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T03:46:50.796Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.760 ms
+info: 2024-01-25T03:46:50.973Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T03:46:50.974Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 85.337 ms
+info: 2024-01-25T03:46:51.152Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:46:51.153Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 85.872 ms
+info: 2024-01-25T03:46:51.335Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:46:51.335Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 90.158 ms
+info: 2024-01-25T03:46:51.649Z Escuchando el puerto 3000.
+info: 2024-01-25T03:46:51.767Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 100.616 ms
+info: 2024-01-25T03:46:51.854Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:46:51.854Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.466 ms
+info: 2024-01-25T03:46:51.860Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.671 ms
+info: 2024-01-25T03:46:51.869Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 4.883 ms
+info: 2024-01-25T03:46:51.878Z ::ffff:127.0.0.1 - GET /productos/65b1d9ab6c3d7db5ab24c03a HTTP/1.1 200 122 - 1.952 ms
+info: 2024-01-25T03:46:51.888Z Usuario daniel esta autenticado
+info: 2024-01-25T03:46:51.891Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1d9ab6c3d7db5ab24c03f","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-25T03:46:51.892Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 7.873 ms
+info: 2024-01-25T03:46:51.899Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.311 ms
+info: 2024-01-25T03:46:51.905Z Usuario daniel esta autenticado
+info: 2024-01-25T03:46:51.910Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 6.934 ms
+info: 2024-01-25T03:46:51.918Z Usuario daniel esta autenticado
+info: 2024-01-25T03:46:51.919Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 3.114 ms
+info: 2024-01-25T03:46:51.927Z Usuario daniel esta autenticado
+error: 2024-01-25T03:46:51.932Z Ocurrio un error relacionado a mongoose. Producto validation failed: moneda: Producto debe tener una moneda {"_message":"Producto validation failed","errors":{"moneda":{"kind":"required","message":"Producto debe tener una moneda","name":"ValidatorError","path":"moneda","properties":{"message":"Producto debe tener una moneda","path":"moneda","type":"required"}}},"stack":"ValidationError: Producto validation failed: moneda: Producto debe tener una moneda\n    at model.Object.<anonymous>.Document.invalidate (D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:2994:17\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\schemaType.js:1368:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+info: 2024-01-25T03:46:51.933Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 616 - 9.661 ms
+info: 2024-01-25T03:46:51.943Z Usuario daniel esta autenticado
+info: 2024-01-25T03:46:51.944Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 3.990 ms
+info: 2024-01-25T03:46:51.953Z Usuario daniel esta autenticado
+info: 2024-01-25T03:46:51.954Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-25T03:46:51.954Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 3.555 ms
+info: 2024-01-25T03:46:51.964Z ::ffff:127.0.0.1 - DELETE /productos/65b1d9ab6c3d7db5ab24c056 HTTP/1.1 401 - - 1.185 ms
+info: 2024-01-25T03:46:51.973Z Usuario daniel esta autenticado
+info: 2024-01-25T03:46:51.976Z Usuario [daniel] no es dueño de producto con id [65b1d9ab6c3d7db5ab24c05c]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-25T03:46:51.977Z ::ffff:127.0.0.1 - DELETE /productos/65b1d9ab6c3d7db5ab24c05c HTTP/1.1 401 442 - 5.767 ms
+info: 2024-01-25T03:46:51.986Z Usuario daniel esta autenticado
+info: 2024-01-25T03:46:51.988Z Producto con id [65b1d9ab6c3d7db5ab24c062] fue borrado
+info: 2024-01-25T03:46:51.989Z ::ffff:127.0.0.1 - DELETE /productos/65b1d9ab6c3d7db5ab24c062 HTTP/1.1 200 122 - 5.211 ms
+info: 2024-01-25T03:52:58.678Z Escuchando el puerto 3000.
+info: 2024-01-25T03:52:58.722Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.364 ms
+info: 2024-01-25T03:52:58.753Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.488 ms
+info: 2024-01-25T03:52:58.874Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 102.688 ms
+warn: 2024-01-25T03:52:58.970Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T03:52:58.976Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 8.588 ms
+warn: 2024-01-25T03:52:58.990Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T03:52:58.992Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 3.591 ms
+info: 2024-01-25T03:52:58.999Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T03:52:59.000Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.871 ms
+info: 2024-01-25T03:52:59.005Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T03:52:59.006Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.620 ms
+info: 2024-01-25T03:52:59.013Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T03:52:59.014Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.700 ms
+info: 2024-01-25T03:52:59.020Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T03:52:59.021Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.956 ms
+info: 2024-01-25T03:52:59.031Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T03:52:59.032Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.104 ms
+info: 2024-01-25T03:52:59.039Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T03:52:59.039Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.640 ms
+info: 2024-01-25T03:52:59.132Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 84.663 ms
+info: 2024-01-25T03:52:59.221Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.576 ms
+info: 2024-01-25T03:52:59.227Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.595 ms
+info: 2024-01-25T03:52:59.235Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T03:52:59.236Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.875 ms
+info: 2024-01-25T03:52:59.408Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T03:52:59.409Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 82.999 ms
+info: 2024-01-25T03:52:59.583Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:52:59.584Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.980 ms
+info: 2024-01-25T03:52:59.757Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:52:59.758Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.060 ms
+info: 2024-01-25T03:53:00.056Z Escuchando el puerto 3000.
+info: 2024-01-25T03:53:00.171Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 98.682 ms
+info: 2024-01-25T03:53:00.258Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:53:00.259Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.342 ms
+info: 2024-01-25T03:53:00.264Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.453 ms
+info: 2024-01-25T03:53:00.273Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 4.744 ms
+info: 2024-01-25T03:53:00.283Z ::ffff:127.0.0.1 - GET /productos/65b1db1c7371a3e04ed59b49 HTTP/1.1 200 122 - 2.363 ms
+info: 2024-01-25T03:53:00.292Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:00.295Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1db1c7371a3e04ed59b4e","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-25T03:53:00.296Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 8.021 ms
+info: 2024-01-25T03:53:00.302Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.299 ms
+info: 2024-01-25T03:53:00.309Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:00.313Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 7.681 ms
+info: 2024-01-25T03:53:00.319Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:00.320Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 2.896 ms
+info: 2024-01-25T03:53:00.328Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:00.336Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 298 - 10.666 ms
+info: 2024-01-25T03:53:00.347Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:00.347Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 2.652 ms
+info: 2024-01-25T03:53:00.355Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:00.356Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-25T03:53:00.357Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 4.228 ms
+info: 2024-01-25T03:53:00.366Z ::ffff:127.0.0.1 - DELETE /productos/65b1db1c7371a3e04ed59b65 HTTP/1.1 401 - - 1.090 ms
+info: 2024-01-25T03:53:00.377Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:00.378Z Usuario [daniel] no es dueño de producto con id [65b1db1c7371a3e04ed59b6b]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-25T03:53:00.379Z ::ffff:127.0.0.1 - DELETE /productos/65b1db1c7371a3e04ed59b6b HTTP/1.1 401 442 - 5.707 ms
+info: 2024-01-25T03:53:00.388Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:00.394Z Producto con id [65b1db1c7371a3e04ed59b71] fue borrado
+info: 2024-01-25T03:53:00.394Z ::ffff:127.0.0.1 - DELETE /productos/65b1db1c7371a3e04ed59b71 HTTP/1.1 200 122 - 8.296 ms
+info: 2024-01-25T03:53:18.775Z Escuchando el puerto 3000.
+info: 2024-01-25T03:53:18.819Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.340 ms
+info: 2024-01-25T03:53:18.847Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.702 ms
+info: 2024-01-25T03:53:18.967Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 100.472 ms
+warn: 2024-01-25T03:53:19.064Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T03:53:19.071Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 8.667 ms
+warn: 2024-01-25T03:53:19.083Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T03:53:19.084Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.476 ms
+info: 2024-01-25T03:53:19.091Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T03:53:19.092Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.685 ms
+info: 2024-01-25T03:53:19.099Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T03:53:19.099Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.660 ms
+info: 2024-01-25T03:53:19.105Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T03:53:19.105Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.640 ms
+info: 2024-01-25T03:53:19.113Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T03:53:19.113Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.801 ms
+info: 2024-01-25T03:53:19.120Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T03:53:19.121Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.697 ms
+info: 2024-01-25T03:53:19.130Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T03:53:19.130Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.691 ms
+info: 2024-01-25T03:53:19.227Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 89.667 ms
+info: 2024-01-25T03:53:19.316Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.576 ms
+info: 2024-01-25T03:53:19.321Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.531 ms
+info: 2024-01-25T03:53:19.328Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T03:53:19.329Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.556 ms
+info: 2024-01-25T03:53:19.499Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T03:53:19.500Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 83.586 ms
+info: 2024-01-25T03:53:19.676Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:53:19.677Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 85.624 ms
+info: 2024-01-25T03:53:19.849Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:53:19.850Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.648 ms
+info: 2024-01-25T03:53:20.136Z Escuchando el puerto 3000.
+info: 2024-01-25T03:53:20.254Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 99.535 ms
+info: 2024-01-25T03:53:20.341Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:53:20.341Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.407 ms
+info: 2024-01-25T03:53:20.347Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.510 ms
+info: 2024-01-25T03:53:20.356Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 4.842 ms
+info: 2024-01-25T03:53:20.366Z ::ffff:127.0.0.1 - GET /productos/65b1db3039bca1edf3b27f80 HTTP/1.1 200 122 - 2.265 ms
+info: 2024-01-25T03:53:20.375Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:20.378Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1db3039bca1edf3b27f85","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-25T03:53:20.379Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 7.774 ms
+info: 2024-01-25T03:53:20.385Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.327 ms
+info: 2024-01-25T03:53:20.392Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:20.397Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 7.782 ms
+info: 2024-01-25T03:53:20.403Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:20.404Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 2.911 ms
+info: 2024-01-25T03:53:20.412Z Usuario daniel esta autenticado
+error: 2024-01-25T03:53:20.421Z Ocurrio un error relacionado a mongoose. Producto validation failed: moneda: Producto debe tener una moneda {"_message":"Producto validation failed","errors":{"moneda":{"kind":"required","message":"Producto debe tener una moneda","name":"ValidatorError","path":"moneda","properties":{"message":"Producto debe tener una moneda","path":"moneda","type":"required"}}},"stack":"ValidationError: Producto validation failed: moneda: Producto debe tener una moneda\n    at model.Object.<anonymous>.Document.invalidate (D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:2994:17\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\schemaType.js:1368:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+info: 2024-01-25T03:53:20.421Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 616 - 11.210 ms
+info: 2024-01-25T03:53:20.432Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:20.433Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 2.369 ms
+info: 2024-01-25T03:53:20.442Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:20.444Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-25T03:53:20.444Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 5.695 ms
+info: 2024-01-25T03:53:20.452Z ::ffff:127.0.0.1 - DELETE /productos/65b1db3039bca1edf3b27f9c HTTP/1.1 401 - - 1.109 ms
+info: 2024-01-25T03:53:20.464Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:20.465Z Usuario [daniel] no es dueño de producto con id [65b1db3039bca1edf3b27fa2]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-25T03:53:20.465Z ::ffff:127.0.0.1 - DELETE /productos/65b1db3039bca1edf3b27fa2 HTTP/1.1 401 442 - 4.088 ms
+info: 2024-01-25T03:53:20.475Z Usuario daniel esta autenticado
+info: 2024-01-25T03:53:20.479Z Producto con id [65b1db3039bca1edf3b27fa8] fue borrado
+info: 2024-01-25T03:53:20.480Z ::ffff:127.0.0.1 - DELETE /productos/65b1db3039bca1edf3b27fa8 HTTP/1.1 200 122 - 8.105 ms
+info: 2024-01-25T03:54:01.522Z Escuchando el puerto 3000.
+info: 2024-01-25T03:54:01.565Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 6.941 ms
+info: 2024-01-25T03:54:01.593Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 4.417 ms
+info: 2024-01-25T03:54:01.711Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 101.791 ms
+warn: 2024-01-25T03:54:01.808Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T03:54:01.814Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.105 ms
+warn: 2024-01-25T03:54:01.826Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T03:54:01.827Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 3.546 ms
+info: 2024-01-25T03:54:01.833Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T03:54:01.834Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.639 ms
+info: 2024-01-25T03:54:01.839Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T03:54:01.840Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.582 ms
+info: 2024-01-25T03:54:01.846Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T03:54:01.847Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.672 ms
+info: 2024-01-25T03:54:01.852Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T03:54:01.853Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.791 ms
+info: 2024-01-25T03:54:01.862Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T03:54:01.863Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.722 ms
+info: 2024-01-25T03:54:01.869Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T03:54:01.870Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.630 ms
+info: 2024-01-25T03:54:01.962Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 84.631 ms
+info: 2024-01-25T03:54:02.049Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.573 ms
+info: 2024-01-25T03:54:02.055Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.648 ms
+info: 2024-01-25T03:54:02.064Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T03:54:02.065Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.459 ms
+info: 2024-01-25T03:54:02.235Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T03:54:02.236Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 82.806 ms
+info: 2024-01-25T03:54:02.411Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:54:02.411Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 85.061 ms
+info: 2024-01-25T03:54:02.584Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:54:02.585Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.842 ms
+info: 2024-01-25T03:54:02.873Z Escuchando el puerto 3000.
+info: 2024-01-25T03:54:02.987Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 95.108 ms
+info: 2024-01-25T03:54:03.073Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:54:03.074Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.948 ms
+info: 2024-01-25T03:54:03.079Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.510 ms
+info: 2024-01-25T03:54:03.088Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 4.805 ms
+info: 2024-01-25T03:54:03.097Z ::ffff:127.0.0.1 - GET /productos/65b1db5b543576c723395590 HTTP/1.1 200 122 - 1.895 ms
+info: 2024-01-25T03:54:03.106Z Usuario daniel esta autenticado
+info: 2024-01-25T03:54:03.110Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1db5b543576c723395595","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-25T03:54:03.111Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 8.260 ms
+info: 2024-01-25T03:54:03.117Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.533 ms
+info: 2024-01-25T03:54:03.123Z Usuario daniel esta autenticado
+info: 2024-01-25T03:54:03.127Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 6.148 ms
+info: 2024-01-25T03:54:03.134Z Usuario daniel esta autenticado
+info: 2024-01-25T03:54:03.135Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 2.875 ms
+info: 2024-01-25T03:54:03.143Z Usuario daniel esta autenticado
+error: 2024-01-25T03:54:03.149Z Ocurrio un error relacionado a mongoose. Producto validation failed: moneda: Producto debe tener una moneda {"_message":"Producto validation failed","errors":{"moneda":{"kind":"required","message":"Producto debe tener una moneda","name":"ValidatorError","path":"moneda","properties":{"message":"Producto debe tener una moneda","path":"moneda","type":"required"}}},"stack":"ValidationError: Producto validation failed: moneda: Producto debe tener una moneda\n    at model.Object.<anonymous>.Document.invalidate (D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:2994:17\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\schemaType.js:1368:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+info: 2024-01-25T03:54:03.149Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 616 - 9.620 ms
+info: 2024-01-25T03:54:03.159Z Usuario daniel esta autenticado
+info: 2024-01-25T03:54:03.159Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 3.432 ms
+info: 2024-01-25T03:54:03.168Z Usuario daniel esta autenticado
+info: 2024-01-25T03:54:03.169Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-25T03:54:03.170Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 3.800 ms
+info: 2024-01-25T03:54:03.179Z ::ffff:127.0.0.1 - DELETE /productos/65b1db5b543576c7233955ac HTTP/1.1 401 - - 1.318 ms
+info: 2024-01-25T03:54:03.188Z Usuario daniel esta autenticado
+info: 2024-01-25T03:54:03.190Z Usuario [daniel] no es dueño de producto con id [65b1db5b543576c7233955b2]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-25T03:54:03.191Z ::ffff:127.0.0.1 - DELETE /productos/65b1db5b543576c7233955b2 HTTP/1.1 401 442 - 4.065 ms
+info: 2024-01-25T03:54:03.201Z Usuario daniel esta autenticado
+info: 2024-01-25T03:54:03.204Z Producto con id [65b1db5b543576c7233955b8] fue borrado
+info: 2024-01-25T03:54:03.204Z ::ffff:127.0.0.1 - DELETE /productos/65b1db5b543576c7233955b8 HTTP/1.1 200 122 - 5.443 ms
+info: 2024-01-25T03:55:18.429Z Escuchando el puerto 3000.
+info: 2024-01-25T03:55:21.413Z Usuario [carlos] no existe. No pudo ser autenticado
+info: 2024-01-25T03:55:21.417Z ::1 - POST /usuarios/login HTTP/1.1 400 403 - 11.991 ms
+info: 2024-01-25T03:55:27.565Z ::1 - GET /usuarios HTTP/1.1 200 165 - 9.190 ms
+info: 2024-01-25T03:55:30.873Z ::1 - POST /usuarios HTTP/1.1 201 29 - 104.964 ms
+info: 2024-01-25T03:55:34.897Z Usuario carlos completo autenticación exitosamente.
+info: 2024-01-25T03:55:34.898Z ::1 - POST /usuarios/login HTTP/1.1 200 183 - 93.490 ms
+info: 2024-01-25T03:55:43.603Z Usuario carlos esta autenticado
+info: 2024-01-25T03:55:43.610Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1dbbf04fcb76dd1a77a8c","dueño":"carlos","moneda":"USD","nombre":"RTX 4080TI","precio":1233}}
+info: 2024-01-25T03:55:43.612Z ::1 - POST /productos HTTP/1.1 201 111 - 13.595 ms
+info: 2024-01-25T03:57:28.897Z Escuchando el puerto 3000.
+info: 2024-01-25T03:57:28.942Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.207 ms
+info: 2024-01-25T03:57:28.970Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.220 ms
+info: 2024-01-25T03:57:29.090Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 102.810 ms
+warn: 2024-01-25T03:57:29.188Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T03:57:29.196Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 9.365 ms
+warn: 2024-01-25T03:57:29.207Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T03:57:29.209Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 3.818 ms
+info: 2024-01-25T03:57:29.216Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T03:57:29.217Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.597 ms
+info: 2024-01-25T03:57:29.222Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T03:57:29.223Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.594 ms
+info: 2024-01-25T03:57:29.230Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T03:57:29.230Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.658 ms
+info: 2024-01-25T03:57:29.235Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T03:57:29.236Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.714 ms
+info: 2024-01-25T03:57:29.245Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T03:57:29.246Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.715 ms
+info: 2024-01-25T03:57:29.253Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T03:57:29.253Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.666 ms
+info: 2024-01-25T03:57:29.347Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 85.555 ms
+info: 2024-01-25T03:57:29.435Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.563 ms
+info: 2024-01-25T03:57:29.440Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.895 ms
+info: 2024-01-25T03:57:29.448Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T03:57:29.449Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.471 ms
+info: 2024-01-25T03:57:29.619Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T03:57:29.619Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 83.164 ms
+info: 2024-01-25T03:57:29.796Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:57:29.796Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.745 ms
+info: 2024-01-25T03:57:29.967Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:57:29.968Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 82.834 ms
+info: 2024-01-25T03:57:30.276Z Escuchando el puerto 3000.
+info: 2024-01-25T03:57:30.394Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 98.613 ms
+info: 2024-01-25T03:57:30.483Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T03:57:30.483Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 85.347 ms
+info: 2024-01-25T03:57:30.488Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.461 ms
+info: 2024-01-25T03:57:30.498Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 5.131 ms
+info: 2024-01-25T03:57:30.506Z ::ffff:127.0.0.1 - GET /productos/65b1dc2aa5baea0d026f469c HTTP/1.1 200 122 - 1.955 ms
+info: 2024-01-25T03:57:30.518Z Usuario daniel esta autenticado
+info: 2024-01-25T03:57:30.520Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1dc2aa5baea0d026f46a1","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-25T03:57:30.521Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 6.107 ms
+info: 2024-01-25T03:57:30.528Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.718 ms
+info: 2024-01-25T03:57:30.535Z Usuario daniel esta autenticado
+info: 2024-01-25T03:57:30.538Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 5.207 ms
+info: 2024-01-25T03:57:30.547Z Usuario daniel esta autenticado
+info: 2024-01-25T03:57:30.548Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 3.114 ms
+info: 2024-01-25T03:57:30.554Z Usuario daniel esta autenticado
+error: 2024-01-25T03:57:30.565Z Ocurrio un error relacionado a mongoose. Producto validation failed: moneda: Producto debe tener una moneda {"_message":"Producto validation failed","errors":{"moneda":{"kind":"required","message":"Producto debe tener una moneda","name":"ValidatorError","path":"moneda","properties":{"message":"Producto debe tener una moneda","path":"moneda","type":"required"}}},"stack":"ValidationError: Producto validation failed: moneda: Producto debe tener una moneda\n    at model.Object.<anonymous>.Document.invalidate (D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:3201:32)\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\document.js:2994:17\n    at D:\\Proyectos\\vende_tus_corotos_api\\node_modules\\mongoose\\lib\\schemaType.js:1368:9\n    at processTicksAndRejections (node:internal/process/task_queues:77:11)"}
+info: 2024-01-25T03:57:30.566Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 616 - 13.742 ms
+info: 2024-01-25T03:57:30.576Z Usuario daniel esta autenticado
+info: 2024-01-25T03:57:30.576Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 3.966 ms
+info: 2024-01-25T03:57:30.585Z Usuario daniel esta autenticado
+info: 2024-01-25T03:57:30.586Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-25T03:57:30.587Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 3.638 ms
+info: 2024-01-25T03:57:30.597Z ::ffff:127.0.0.1 - DELETE /productos/65b1dc2aa5baea0d026f46b8 HTTP/1.1 401 - - 1.642 ms
+info: 2024-01-25T03:57:30.606Z Usuario daniel esta autenticado
+info: 2024-01-25T03:57:30.609Z Usuario [daniel] no es dueño de producto con id [65b1dc2aa5baea0d026f46be]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-25T03:57:30.610Z ::ffff:127.0.0.1 - DELETE /productos/65b1dc2aa5baea0d026f46be HTTP/1.1 401 442 - 5.679 ms
+info: 2024-01-25T03:57:30.619Z Usuario daniel esta autenticado
+info: 2024-01-25T03:57:30.622Z Producto con id [65b1dc2aa5baea0d026f46c4] fue borrado
+info: 2024-01-25T03:57:30.623Z ::ffff:127.0.0.1 - DELETE /productos/65b1dc2aa5baea0d026f46c4 HTTP/1.1 200 122 - 5.810 ms
+info: 2024-01-25T04:02:15.293Z Escuchando el puerto 3000.
+info: 2024-01-25T04:02:15.335Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.338 ms
+info: 2024-01-25T04:02:15.366Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.915 ms
+info: 2024-01-25T04:02:15.484Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 99.566 ms
+warn: 2024-01-25T04:02:15.581Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T04:02:15.588Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 8.327 ms
+warn: 2024-01-25T04:02:15.600Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T04:02:15.602Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.832 ms
+info: 2024-01-25T04:02:15.608Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T04:02:15.609Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 2.203 ms
+info: 2024-01-25T04:02:15.616Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T04:02:15.616Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.607 ms
+info: 2024-01-25T04:02:15.621Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T04:02:15.622Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.658 ms
+info: 2024-01-25T04:02:15.628Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T04:02:15.629Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.778 ms
+info: 2024-01-25T04:02:15.637Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T04:02:15.638Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.700 ms
+info: 2024-01-25T04:02:15.645Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T04:02:15.646Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.670 ms
+info: 2024-01-25T04:02:15.738Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 85.681 ms
+info: 2024-01-25T04:02:15.827Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.600 ms
+info: 2024-01-25T04:02:15.832Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.533 ms
+info: 2024-01-25T04:02:15.839Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T04:02:15.840Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 3.128 ms
+info: 2024-01-25T04:02:16.014Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T04:02:16.014Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 83.268 ms
+info: 2024-01-25T04:02:16.187Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T04:02:16.188Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.148 ms
+info: 2024-01-25T04:02:16.360Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T04:02:16.361Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.102 ms
+info: 2024-01-25T04:02:16.821Z Escuchando el puerto 3000.
+info: 2024-01-25T04:02:16.935Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 97.822 ms
+info: 2024-01-25T04:02:17.022Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T04:02:17.022Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.618 ms
+info: 2024-01-25T04:02:17.028Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.507 ms
+info: 2024-01-25T04:02:17.037Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 4.744 ms
+info: 2024-01-25T04:02:17.048Z ::ffff:127.0.0.1 - GET /productos/65b1dd49fcc7224849b32648 HTTP/1.1 200 122 - 2.471 ms
+info: 2024-01-25T04:02:17.056Z Usuario daniel esta autenticado
+info: 2024-01-25T04:02:17.060Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1dd49fcc7224849b3264d","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-25T04:02:17.061Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 8.190 ms
+info: 2024-01-25T04:02:17.068Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.552 ms
+info: 2024-01-25T04:02:17.076Z Usuario daniel esta autenticado
+info: 2024-01-25T04:02:17.081Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 7.527 ms
+info: 2024-01-25T04:02:17.087Z Usuario daniel esta autenticado
+info: 2024-01-25T04:02:17.088Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 3.136 ms
+info: 2024-01-25T04:02:17.109Z Usuario daniel esta autenticado
+info: 2024-01-25T04:02:17.109Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 3.380 ms
+info: 2024-01-25T04:02:17.119Z Usuario daniel esta autenticado
+info: 2024-01-25T04:02:17.121Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-25T04:02:17.121Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 4.895 ms
+info: 2024-01-25T04:02:17.130Z ::ffff:127.0.0.1 - DELETE /productos/65b1dd49fcc7224849b32662 HTTP/1.1 401 - - 1.460 ms
+info: 2024-01-25T04:02:17.142Z Usuario daniel esta autenticado
+info: 2024-01-25T04:02:17.144Z Usuario [daniel] no es dueño de producto con id [65b1dd49fcc7224849b32668]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-25T04:02:17.144Z ::ffff:127.0.0.1 - DELETE /productos/65b1dd49fcc7224849b32668 HTTP/1.1 401 442 - 5.885 ms
+info: 2024-01-25T04:02:17.153Z Usuario daniel esta autenticado
+info: 2024-01-25T04:02:17.155Z Producto con id [65b1dd49fcc7224849b3266e] fue borrado
+info: 2024-01-25T04:02:17.156Z ::ffff:127.0.0.1 - DELETE /productos/65b1dd49fcc7224849b3266e HTTP/1.1 200 122 - 5.052 ms
+info: 2024-01-25T04:02:45.008Z Escuchando el puerto 3000.
+info: 2024-01-25T04:02:45.058Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.506 ms
+info: 2024-01-25T04:02:45.094Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 6.511 ms
+info: 2024-01-25T04:02:45.251Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 132.806 ms
+warn: 2024-01-25T04:02:45.356Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T04:02:45.363Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 8.878 ms
+warn: 2024-01-25T04:02:45.378Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T04:02:45.379Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 4.014 ms
+info: 2024-01-25T04:02:45.386Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T04:02:45.387Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.937 ms
+info: 2024-01-25T04:02:45.397Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T04:02:45.398Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.193 ms
+info: 2024-01-25T04:02:45.404Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T04:02:45.405Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.720 ms
+info: 2024-01-25T04:02:45.413Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T04:02:45.414Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.961 ms
+info: 2024-01-25T04:02:45.423Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T04:02:45.425Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.297 ms
+info: 2024-01-25T04:02:45.434Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T04:02:45.435Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.765 ms
+info: 2024-01-25T04:02:45.538Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 95.193 ms
+info: 2024-01-25T04:02:45.631Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.628 ms
+info: 2024-01-25T04:02:45.637Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.572 ms
+info: 2024-01-25T04:02:45.646Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T04:02:45.647Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 4.094 ms
+info: 2024-01-25T04:02:45.833Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T04:02:45.834Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 88.282 ms
+info: 2024-01-25T04:02:46.025Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T04:02:46.026Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 98.356 ms
+info: 2024-01-25T04:02:46.213Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T04:02:46.214Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 92.398 ms
+info: 2024-01-25T04:03:07.264Z Escuchando el puerto 3000.
+info: 2024-01-25T04:03:07.306Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 2 - 5.252 ms
+info: 2024-01-25T04:03:07.335Z ::ffff:127.0.0.1 - GET /usuarios HTTP/1.1 200 339 - 3.371 ms
+info: 2024-01-25T04:03:07.454Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 101.238 ms
+warn: 2024-01-25T04:03:07.553Z Email [danielnuevoemail@gmail.com] o username [daniel] ya existen en la base de datos
+info: 2024-01-25T04:03:07.560Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 8.837 ms
+warn: 2024-01-25T04:03:07.572Z Email [daniel@gmail.com] o username [nuevodaniel] ya existen en la base de datos
+info: 2024-01-25T04:03:07.574Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 409 337 - 2.661 ms
+info: 2024-01-25T04:03:07.582Z Producto fallo la validacion {"0":"\"username\" is required"}
+info: 2024-01-25T04:03:07.583Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 1.623 ms
+info: 2024-01-25T04:03:07.588Z Producto fallo la validacion {"0":"\"password\" is required"}
+info: 2024-01-25T04:03:07.589Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.585 ms
+info: 2024-01-25T04:03:07.596Z Producto fallo la validacion {"0":"\"email\" is required"}
+info: 2024-01-25T04:03:07.597Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.725 ms
+info: 2024-01-25T04:03:07.602Z Producto fallo la validacion {"0":"\"email\" must be a valid email"}
+info: 2024-01-25T04:03:07.603Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.739 ms
+info: 2024-01-25T04:03:07.612Z Producto fallo la validacion {"0":"\"username\" length must be at least 3 characters long"}
+info: 2024-01-25T04:03:07.613Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.877 ms
+info: 2024-01-25T04:03:07.619Z Producto fallo la validacion {"0":"\"password\" length must be at least 8 characters long"}
+info: 2024-01-25T04:03:07.620Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 400 66 - 0.655 ms
+info: 2024-01-25T04:03:07.715Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 86.893 ms
+info: 2024-01-25T04:03:07.803Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.564 ms
+info: 2024-01-25T04:03:07.809Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 48 - 0.644 ms
+info: 2024-01-25T04:03:07.816Z Usuario [noexisto] no existe. No pudo ser autenticado
+info: 2024-01-25T04:03:07.817Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 395 - 2.405 ms
+info: 2024-01-25T04:03:07.986Z Usuario daniel no completo autenticación. Contraseña incorrecta
+info: 2024-01-25T04:03:07.987Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 400 320 - 82.806 ms
+info: 2024-01-25T04:03:08.162Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T04:03:08.163Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 84.072 ms
+info: 2024-01-25T04:03:08.380Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T04:03:08.381Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 85.627 ms
+info: 2024-01-25T04:03:08.887Z Escuchando el puerto 3000.
+info: 2024-01-25T04:03:09.002Z ::ffff:127.0.0.1 - POST /usuarios HTTP/1.1 201 29 - 98.222 ms
+info: 2024-01-25T04:03:09.089Z Usuario daniel completo autenticación exitosamente.
+info: 2024-01-25T04:03:09.089Z ::ffff:127.0.0.1 - POST /usuarios/login HTTP/1.1 200 183 - 83.917 ms
+info: 2024-01-25T04:03:09.095Z ::ffff:127.0.0.1 - GET /productos/123 HTTP/1.1 400 18 - 0.597 ms
+info: 2024-01-25T04:03:09.105Z ::ffff:127.0.0.1 - GET /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 332 - 5.561 ms
+info: 2024-01-25T04:03:09.116Z ::ffff:127.0.0.1 - GET /productos/65b1dd7d58ba26207e11949f HTTP/1.1 200 122 - 1.716 ms
+info: 2024-01-25T04:03:09.125Z Usuario daniel esta autenticado
+info: 2024-01-25T04:03:09.128Z Producto agregado a la colección productos {"$__":{"$versionError":null,"activePaths":{"paths":{"dueño":"require","moneda":"require","nombre":"require","precio":"require"},"states":{"default":{},"modify":{},"require":{"dueño":true,"moneda":true,"nombre":true,"precio":true}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"dueño":true,"moneda":true,"nombre":true,"precio":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"65b1dd7d58ba26207e1194a4","dueño":"daniel","moneda":"USD","nombre":"Cuerda Mammut 60 metros","precio":200}}
+info: 2024-01-25T04:03:09.129Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 201 123 - 7.268 ms
+info: 2024-01-25T04:03:09.135Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 401 - - 1.381 ms
+info: 2024-01-25T04:03:09.141Z Usuario daniel esta autenticado
+info: 2024-01-25T04:03:09.146Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 6.810 ms
+info: 2024-01-25T04:03:09.152Z Usuario daniel esta autenticado
+info: 2024-01-25T04:03:09.153Z ::ffff:127.0.0.1 - POST /productos HTTP/1.1 500 1609 - 3.060 ms
+info: 2024-01-25T04:03:09.163Z Usuario daniel esta autenticado
+info: 2024-01-25T04:03:09.164Z ::ffff:127.0.0.1 - DELETE /productos/123 HTTP/1.1 400 18 - 2.627 ms
+info: 2024-01-25T04:03:09.172Z Usuario daniel esta autenticado
+info: 2024-01-25T04:03:09.174Z Producto con id [5ab8dbcc6539f91c2288b0c1] no existe. Nada que borrar
+info: 2024-01-25T04:03:09.175Z ::ffff:127.0.0.1 - DELETE /productos/5ab8dbcc6539f91c2288b0c1 HTTP/1.1 404 367 - 4.674 ms
+info: 2024-01-25T04:03:09.183Z ::ffff:127.0.0.1 - DELETE /productos/65b1dd7d58ba26207e1194b8 HTTP/1.1 401 - - 1.091 ms
+info: 2024-01-25T04:03:09.194Z Usuario daniel esta autenticado
+info: 2024-01-25T04:03:09.195Z Usuario [daniel] no es dueño de producto con id [65b1dd7d58ba26207e1194be]. Dueño real es [ricardo98]. Request no será procesado
+info: 2024-01-25T04:03:09.196Z ::ffff:127.0.0.1 - DELETE /productos/65b1dd7d58ba26207e1194be HTTP/1.1 401 442 - 5.345 ms
+info: 2024-01-25T04:03:09.204Z Usuario daniel esta autenticado
+info: 2024-01-25T04:03:09.208Z Producto con id [65b1dd7d58ba26207e1194c4] fue borrado
+info: 2024-01-25T04:03:09.209Z ::ffff:127.0.0.1 - DELETE /productos/65b1dd7d58ba26207e1194c4 HTTP/1.1 200 122 - 6.505 ms
